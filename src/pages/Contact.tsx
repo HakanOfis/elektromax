@@ -2,8 +2,11 @@ import { useMemo, useState } from "react";
 import { ArrowRight, Copy, Mail, Phone, Send, Share2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
-import { elektromax } from "@/content/elektromax";
+import { useI18n } from "@/hooks/useI18n";
 import { cn } from "@/lib/utils";
+
+// Formspree form ID — get it from https://formspree.io → New Form → email: info@maxelektro.be
+const FORMSPREE_ID = "YOUR_FORM_ID";
 
 type FormState = {
   name: string;
@@ -16,10 +19,14 @@ function ContactRow({
   label,
   value,
   href,
+  copyLabel,
+  copiedLabel,
 }: {
   label: string;
   value: string;
   href: string;
+  copyLabel: string;
+  copiedLabel: string;
 }) {
   const [copied, setCopied] = useState(false);
 
@@ -47,7 +54,7 @@ function ContactRow({
           }}
         >
           <Copy size={14} />
-          {copied ? "Kopyalandı" : "Kopyala"}
+          {copied ? copiedLabel : copyLabel}
         </button>
       </div>
     </div>
@@ -55,50 +62,53 @@ function ContactRow({
 }
 
 export default function Contact() {
+  const { content, ui, locale } = useI18n();
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
   const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>({
     name: "",
     contact: "",
-    subject: "Keuring / AREI hazırlığı",
+    subject: ui.contactPage.subjectOptions[0] ?? "",
     message: "",
   });
 
   const telHref = useMemo(
-    () => `tel:${elektromax.contact.phone.replace(/\s+/g, "")}`,
-    [],
+    () => `tel:${content.contact.phone.replace(/\s+/g, "")}`,
+    [content.contact.phone],
   );
-  const mailHref = useMemo(() => `mailto:${elektromax.contact.email}`, []);
+  const mailHref = useMemo(() => `mailto:${content.contact.email}`, [content.contact.email]);
 
   const mailDraftHref = useMemo(() => {
-    const subject = encodeURIComponent(`Elektromax – ${form.subject}`);
+    const subject = encodeURIComponent(`${content.name} – ${form.subject}`);
+    const nameLabel = locale === "nl" ? "Naam" : "İsim";
+    const contactLabel = locale === "nl" ? "Contact" : "İletişim";
     const body = encodeURIComponent(
       [
-        `İsim: ${form.name || "-"}`,
-        `İletişim: ${form.contact || "-"}`,
+        `${nameLabel}: ${form.name || "-"}`,
+        `${contactLabel}: ${form.contact || "-"}`,
         "",
         form.message || "",
       ].join("\n"),
     );
-    return `mailto:${elektromax.contact.email}?subject=${subject}&body=${body}`;
-  }, [form]);
+    return `mailto:${content.contact.email}?subject=${subject}&body=${body}`;
+  }, [content.contact.email, content.name, form, locale]);
 
   return (
     <Layout
-      title="İletişim | Elektromax – Regio Antwerpen"
-      description="Keuring/AREI hazırlığı, genel elektrik işleri, yeni tesisat veya EV laadpalen için Elektromax ile iletişime geçin."
+      title={ui.meta.contactTitle}
+      description={ui.meta.contactDescription}
     >
       <div className="space-y-4">
-        <h1 className="text-3xl font-black tracking-tight md:text-4xl">İletişim</h1>
+        <h1 className="text-3xl font-black tracking-tight md:text-4xl">{ui.contactPage.title}</h1>
         <p className="max-w-2xl text-sm leading-relaxed text-zinc-200/75">
-          {elektromax.contactPage.intro}
+          {content.contactPage.intro}
         </p>
       </div>
 
       <div className="mt-10 grid gap-4 lg:grid-cols-[.95fr_.55fr]">
         <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-8">
-          <h2 className="text-lg font-extrabold tracking-tight md:text-xl">Mesaj gönderin</h2>
-          <p className="mt-3 text-sm leading-relaxed text-zinc-200/75">{elektromax.contactPage.formHelp}</p>
+          <h2 className="text-lg font-extrabold tracking-tight md:text-xl">{ui.contactPage.sendMessage}</h2>
+          <p className="mt-3 text-sm leading-relaxed text-zinc-200/75">{content.contactPage.formHelp}</p>
 
           <form
             className="mt-6 grid gap-4"
@@ -108,59 +118,75 @@ export default function Contact() {
 
               const msg = form.message.trim();
               if (msg.length < 10) {
-                setError("Mesaj alanına talebinizi biraz daha detaylı yazın.");
+                setError(ui.contactPage.errorMessage);
                 return;
               }
 
               setStatus("sending");
-              await new Promise((r) => window.setTimeout(r, 850));
-              setStatus("sent");
+              try {
+                const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", Accept: "application/json" },
+                  body: JSON.stringify({
+                    name: form.name,
+                    contact: form.contact,
+                    subject: form.subject,
+                    message: form.message,
+                    _locale: locale,
+                  }),
+                });
+                if (res.ok) {
+                  setStatus("sent");
+                } else {
+                  throw new Error("Network response was not ok");
+                }
+              } catch {
+                setStatus("idle");
+                setError(ui.contactPage.errorMessage);
+              }
             }}
           >
             <div className="grid gap-4 md:grid-cols-2">
               <label className="grid gap-2">
-                <span className="text-xs font-semibold text-zinc-200/70">Ad Soyad</span>
+                <span className="text-xs font-semibold text-zinc-200/70">{ui.contactPage.name}</span>
                 <input
                   value={form.name}
                   onChange={(e) => setForm((s) => ({ ...s, name: e.target.value }))}
                   className="h-11 rounded-2xl border border-white/10 bg-black/35 px-4 text-sm text-zinc-100 outline-none transition focus:border-white/25"
-                  placeholder="Adınız"
+                  placeholder={ui.contactPage.placeholderName}
                 />
               </label>
               <label className="grid gap-2">
-                <span className="text-xs font-semibold text-zinc-200/70">Telefon veya e-posta</span>
+                <span className="text-xs font-semibold text-zinc-200/70">{ui.contactPage.contact}</span>
                 <input
                   value={form.contact}
                   onChange={(e) => setForm((s) => ({ ...s, contact: e.target.value }))}
                   className="h-11 rounded-2xl border border-white/10 bg-black/35 px-4 text-sm text-zinc-100 outline-none transition focus:border-white/25"
-                  placeholder="+32… veya email"
+                  placeholder={ui.contactPage.placeholderContact}
                 />
               </label>
             </div>
 
             <label className="grid gap-2">
-              <span className="text-xs font-semibold text-zinc-200/70">Konu</span>
+              <span className="text-xs font-semibold text-zinc-200/70">{ui.contactPage.subject}</span>
               <select
                 value={form.subject}
                 onChange={(e) => setForm((s) => ({ ...s, subject: e.target.value }))}
                 className="h-11 rounded-2xl border border-white/10 bg-black/35 px-4 text-sm text-zinc-100 outline-none transition focus:border-white/25"
               >
-                <option>Keuring / AREI hazırlığı</option>
-                <option>Genel elektrik işleri</option>
-                <option>Yeni bina & şantiye tesisatı</option>
-                <option>EV şarj istasyonu (laadpalen)</option>
-                <option>Kamera / interkom sistemleri</option>
-                <option>Diğer</option>
+                {ui.contactPage.subjectOptions.map((o) => (
+                  <option key={o}>{o}</option>
+                ))}
               </select>
             </label>
 
             <label className="grid gap-2">
-              <span className="text-xs font-semibold text-zinc-200/70">Mesaj</span>
+              <span className="text-xs font-semibold text-zinc-200/70">{ui.contactPage.message}</span>
               <textarea
                 value={form.message}
                 onChange={(e) => setForm((s) => ({ ...s, message: e.target.value }))}
                 className="min-h-32 rounded-2xl border border-white/10 bg-black/35 px-4 py-3 text-sm text-zinc-100 outline-none transition focus:border-white/25"
-                placeholder="Mekan tipi, bölge, ihtiyacınız ve zaman tercihinizi yazın."
+                placeholder={ui.contactPage.placeholderMessage}
               />
             </label>
 
@@ -168,18 +194,18 @@ export default function Contact() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button type="submit" className="sm:w-auto">
-                {status === "sending" ? "Gönderiliyor…" : status === "sent" ? "Gönderildi" : "Gönder"}
+                {status === "sending" ? ui.contactPage.sending : status === "sent" ? ui.contactPage.sent : ui.contactPage.send}
                 <Send size={16} />
               </Button>
               <Button href={mailDraftHref} variant="secondary" className="sm:w-auto">
-                E-posta ile gönder
+                {ui.contactPage.sendByEmail}
                 <ArrowRight size={16} />
               </Button>
             </div>
 
             {status === "sent" ? (
               <div className="rounded-2xl border border-[var(--em-accent)]/30 bg-[rgba(255,225,0,.08)] p-4 text-sm text-zinc-100/90">
-                Mesajınız alındı. En kısa sürede dönüş yapacağız. Daha hızlı iletişim için arayabilirsiniz.
+                {ui.contactPage.success}
               </div>
             ) : null}
           </form>
@@ -187,20 +213,20 @@ export default function Contact() {
 
         <aside className="space-y-4">
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
-            <h2 className="text-lg font-extrabold tracking-tight md:text-xl">Hızlı iletişim</h2>
+            <h2 className="text-lg font-extrabold tracking-tight md:text-xl">{ui.common.quickContact}</h2>
             <div className="mt-4 grid gap-3">
-              <ContactRow label="Telefon" value={elektromax.contact.phone} href={telHref} />
-              <ContactRow label="E-posta" value={elektromax.contact.email} href={mailHref} />
+              <ContactRow label={ui.contactPage.contact} value={content.contact.phone} href={telHref} copyLabel={ui.contactPage.copy} copiedLabel={ui.contactPage.copied} />
+              <ContactRow label={ui.footer.email} value={content.contact.email} href={mailHref} copyLabel={ui.contactPage.copy} copiedLabel={ui.contactPage.copied} />
             </div>
 
             <div className="mt-5 grid gap-2">
               <Button href={telHref} variant="secondary">
                 <Phone size={16} />
-                Ara
+                {ui.header.call}
               </Button>
               <Button href={mailHref} variant="secondary">
                 <Mail size={16} />
-                Mail at
+                {ui.contactPage.mail}
               </Button>
             </div>
           </div>
@@ -208,15 +234,15 @@ export default function Contact() {
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="text-lg font-extrabold tracking-tight">Sosyal medya</div>
-                <div className="mt-2 text-sm text-zinc-200/75">Instagram & X: {elektromax.socials[0].handle}</div>
+                <div className="text-lg font-extrabold tracking-tight">{ui.contactPage.social}</div>
+                <div className="mt-2 text-sm text-zinc-200/75">Instagram & X: {content.socials[0].handle}</div>
               </div>
               <div className="grid h-10 w-10 place-items-center rounded-2xl border border-white/10 bg-black/30 text-[var(--em-accent)]">
                 <Share2 size={16} />
               </div>
             </div>
             <div className="mt-4 grid gap-2">
-              {elektromax.socials.map((s) => (
+              {content.socials.map((s) => (
                 <Button key={s.label} href={s.url} variant="secondary">
                   {s.label} @{s.handle}
                   <ArrowRight size={16} />
@@ -226,13 +252,12 @@ export default function Contact() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
-            <div className="text-xs font-semibold text-zinc-200/65">Bölge</div>
-            <div className="mt-2 text-sm font-semibold text-zinc-100">{elektromax.region}</div>
-            <div className="mt-3 text-sm text-zinc-200/75">{elektromax.contactPage.closing}</div>
+            <div className="text-xs font-semibold text-zinc-200/65">{ui.contactPage.zone}</div>
+            <div className="mt-2 text-sm font-semibold text-zinc-100">{content.region}</div>
+            <div className="mt-3 text-sm text-zinc-200/75">{content.contactPage.closing}</div>
           </div>
         </aside>
       </div>
     </Layout>
   );
 }
-

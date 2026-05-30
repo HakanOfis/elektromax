@@ -42,7 +42,40 @@ export type ProjectCard = {
   tags: string[];
 };
 
-export const elektromax = {
+export type SiteContent = {
+  name: string;
+  sector: string;
+  region: string;
+  contact: {
+    phone: string;
+    email: string;
+    addressLine: string;
+  };
+  socials: SocialLink[];
+  home: {
+    headline: string;
+    intro: string;
+    ctas: Array<{ label: string; to: string }>;
+    trust: Array<{ title: string; text: string }>;
+    audience: string;
+  };
+  services: Service[];
+  projects: ProjectCard[];
+  about: {
+    title: string;
+    intro: string;
+    workingStyle: string[];
+    values: Array<{ title: string; text: string }>;
+    localFocus: string;
+  };
+  contactPage: {
+    intro: string;
+    formHelp: string;
+    closing: string;
+  };
+};
+
+export const elektromax: SiteContent = {
   name: "Elektromax",
   sector: "Algemene elektriciteitswerken",
   region: "Regio Antwerpen",
@@ -62,7 +95,7 @@ export const elektromax = {
       handle: "amax5522",
       url: "https://x.com/amax5522",
     },
-  ] satisfies SocialLink[],
+  ],
   home: {
     headline: "Antwerpen’de konut, işyeri ve şantiyeler için güvenli elektrik çözümleri",
     intro:
@@ -413,7 +446,7 @@ export const elektromax = {
         secondaryTo: "/projeler",
       },
     },
-  ] satisfies Service[],
+  ],
   projects: [
     {
       title: "Antwerpen’de apartman dairesinde keuring öncesi tesisat yenileme",
@@ -439,7 +472,7 @@ export const elektromax = {
         "Mevcut elektrik kapasitesi kontrol edildi, uygun hat ve koruma ekipmanları belirlendi. EV laadpalen montajı tamamlandı ve güvenli şekilde devreye alındı.",
       tags: ["EV", "Laadpalen", "Kurulum"],
     },
-  ] satisfies ProjectCard[],
+  ],
   about: {
     title: "Hakkımızda (Over ons)",
     intro:
@@ -479,7 +512,7 @@ export const elektromax = {
     closing:
       "Hızlı bilgi almak için arayabilir veya e-posta gönderebilirsiniz. Elektromax, Antwerpen bölgesinde güvenli ve standartlara uygun elektrik çözümleri için yanınızda.",
   },
-} as const;
+};
 
 export function getService(slug: ServiceSlug) {
   const s = elektromax.services.find((x) => x.slug === slug);

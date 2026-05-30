@@ -2,7 +2,8 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
-import { elektromax, type ServiceSlug, getService } from "@/content/elektromax";
+import { getService, type ServiceSlug } from "@/content";
+import { useI18n } from "@/hooks/useI18n";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -10,11 +11,12 @@ type Props = {
 };
 
 function SideNav({ active }: { active: ServiceSlug }) {
+  const { content, ui } = useI18n();
   return (
     <nav className="space-y-2">
-      <div className="text-xs font-semibold text-zinc-200/65">Hizmetler</div>
+      <div className="text-xs font-semibold text-zinc-200/65">{ui.nav.services}</div>
       <div className="flex flex-col gap-1">
-        {elektromax.services.map((s) => (
+        {content.services.map((s) => (
           <Link
             key={s.slug}
             to={`/hizmetler/${s.slug}`}
@@ -66,17 +68,18 @@ function Block({
 }
 
 export default function ServiceDetail({ slug }: Props) {
-  const service = getService(slug);
+  const { locale, content, ui } = useI18n();
+  const service = getService(locale, slug);
 
   return (
     <Layout title={service.seoTitle} description={service.seoDescription}>
       <div className="flex items-center gap-2 text-xs font-semibold text-zinc-200/65">
         <Link className="hover:text-zinc-100" to="/">
-          Ana Sayfa
+          {ui.nav.home}
         </Link>
         <ChevronRight size={14} />
         <Link className="hover:text-zinc-100" to="/hizmetler">
-          Hizmetler
+          {ui.nav.services}
         </Link>
         <ChevronRight size={14} />
         <span className="text-zinc-100">{service.title}</span>
@@ -117,7 +120,7 @@ export default function ServiceDetail({ slug }: Props) {
                 <ArrowRight size={16} />
               </Button>
               <Button to="/iletisim" variant="secondary">
-                İletişim sayfasına git
+                {ui.common.goToContact}
               </Button>
             </div>
           </section>
@@ -126,17 +129,17 @@ export default function ServiceDetail({ slug }: Props) {
         <aside className="space-y-4">
           <SideNav active={slug} />
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-            <div className="text-xs font-semibold text-zinc-200/65">Regio</div>
-            <div className="mt-2 text-sm font-semibold text-zinc-100">{elektromax.region}</div>
+            <div className="text-xs font-semibold text-zinc-200/65">{ui.common.region}</div>
+            <div className="mt-2 text-sm font-semibold text-zinc-100">{content.region}</div>
             <div className="mt-3 text-sm text-zinc-200/75">
-              Hızlı iletişim için arayın veya mesaj bırakın.
+              {ui.servicesPage.contactLead}
             </div>
             <div className="mt-5 grid gap-2">
-              <Button href={`tel:${elektromax.contact.phone.replace(/\s+/g, "")}`} variant="secondary">
-                Ara: {elektromax.contact.phone}
+              <Button href={`tel:${content.contact.phone.replace(/\s+/g, "")}`} variant="secondary">
+                {ui.common.callPrefix} {content.contact.phone}
               </Button>
               <Button to="/iletisim" variant="secondary">
-                Formu aç
+                {ui.common.openForm}
               </Button>
             </div>
           </div>
@@ -145,4 +148,3 @@ export default function ServiceDetail({ slug }: Props) {
     </Layout>
   );
 }
-

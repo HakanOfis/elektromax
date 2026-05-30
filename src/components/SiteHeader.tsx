@@ -3,20 +3,14 @@ import { useEffect, useMemo, useState } from "react";
 import { Menu, Phone, X, Moon, SunMedium } from "lucide-react";
 import Button from "@/components/Button";
 import { cn } from "@/lib/utils";
-import { elektromax } from "@/content/elektromax";
 import { useTheme } from "@/hooks/useTheme";
+import { useI18n } from "@/hooks/useI18n";
+import { useLocale } from "@/hooks/useLocale";
+import type { Locale } from "@/content";
 
 type NavItem = { label: string; to: string };
 
-const nav: NavItem[] = [
-  { label: "Ana Sayfa", to: "/" },
-  { label: "Hizmetler", to: "/hizmetler" },
-  { label: "Projeler", to: "/projeler" },
-  { label: "Hakkımızda", to: "/hakkimizda" },
-  { label: "İletişim", to: "/iletisim" },
-];
-
-function NavItems({ onNavigate }: { onNavigate?: () => void }) {
+function NavItems({ nav, onNavigate }: { nav: NavItem[]; onNavigate?: () => void }) {
   return (
     <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
       {nav.map((item) => (
@@ -38,15 +32,53 @@ function NavItems({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
+const LOCALES: { code: Locale; label: string }[] = [
+  { code: "nl", label: "NL" },
+  { code: "en", label: "EN" },
+  { code: "tr", label: "TR" },
+];
+
+function LangSwitcher() {
+  const { locale, setLocale } = useLocale();
+  return (
+    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1 gap-0.5">
+      {LOCALES.map(({ code, label }) => (
+        <button
+          key={code}
+          type="button"
+          onClick={() => setLocale(code)}
+          className={cn(
+            "rounded-full px-2.5 py-1 text-xs font-extrabold transition",
+            locale === code
+              ? "bg-white/15 text-zinc-100"
+              : "text-zinc-400 hover:text-zinc-200",
+          )}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { locale, ui, content } = useI18n();
   const location = useLocation();
 
   const telHref = useMemo(
-    () => `tel:${elektromax.contact.phone.replace(/\s+/g, "")}`,
-    [],
+    () => `tel:${content.contact.phone.replace(/\s+/g, "")}`,
+    [content.contact.phone],
   );
+
+  const nav: NavItem[] = [
+    { label: ui.nav.home, to: "/" },
+    { label: ui.nav.services, to: ui.routes.services },
+    { label: ui.nav.projects, to: ui.routes.projects },
+    { label: ui.nav.about, to: ui.routes.about },
+    { label: ui.nav.contact, to: ui.routes.contact },
+  ];
 
   useEffect(() => {
     setOpen(false);
@@ -67,36 +99,38 @@ export default function SiteHeader() {
               </span>
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="text-sm font-extrabold tracking-tight">{elektromax.name}</span>
+              <span className="text-sm font-extrabold tracking-tight">{content.name}</span>
               <span className="text-[11px] font-semibold text-zinc-300/70">
-                {elektromax.region}
+                {content.region}
               </span>
             </span>
           </NavLink>
         </div>
 
         <div className="hidden items-center gap-2 sm:flex">
-          <NavItems />
+          <NavItems nav={nav} />
+          <LangSwitcher />
           <button
             type="button"
             onClick={toggleTheme}
             className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-200 transition hover:bg-white/8"
-            aria-label="Tema değiştir"
+            aria-label={ui.header.toggleTheme}
           >
             {theme === "dark" ? <SunMedium size={18} /> : <Moon size={18} />}
           </button>
           <Button href={telHref} variant="secondary" className="pl-4 pr-5">
             <Phone size={16} />
-            Ara
+            {ui.header.call}
           </Button>
         </div>
 
         <div className="flex items-center gap-2 sm:hidden">
+          <LangSwitcher />
           <button
             type="button"
             onClick={toggleTheme}
             className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-200 transition hover:bg-white/8"
-            aria-label="Tema değiştir"
+            aria-label={ui.header.toggleTheme}
           >
             {theme === "dark" ? <SunMedium size={18} /> : <Moon size={18} />}
           </button>
@@ -104,7 +138,7 @@ export default function SiteHeader() {
             type="button"
             onClick={() => setOpen((v) => !v)}
             className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-200 transition hover:bg-white/8"
-            aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
+            aria-label={open ? ui.header.closeMenu : ui.header.openMenu}
           >
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -114,13 +148,13 @@ export default function SiteHeader() {
       {open ? (
         <div className="border-t border-white/10 bg-black/40 px-4 py-4 backdrop-blur-xl sm:hidden">
           <div className="mx-auto w-full max-w-[1100px] px-2">
-            <NavItems onNavigate={() => setOpen(false)} />
+            <NavItems nav={nav} onNavigate={() => setOpen(false)} />
             <div className="mt-3 grid grid-cols-1 gap-2">
               <Button href={telHref} variant="secondary">
                 <Phone size={16} />
-                {elektromax.contact.phone}
+                {content.contact.phone}
               </Button>
-              <Button to="/iletisim">Teklif / randevu isteyin</Button>
+              <Button to={ui.routes.contact}>{ui.header.quoteCta}</Button>
             </div>
           </div>
         </div>
@@ -128,4 +162,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-

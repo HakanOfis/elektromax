@@ -1,24 +1,24 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
-import { elektromax } from "@/content/elektromax";
+import { useI18n } from "@/hooks/useI18n";
 
 export default function Projects() {
+  const { content, ui } = useI18n();
   return (
     <Layout
-      title="Projeler | Elektromax – Regio Antwerpen"
-      description="Örnek proje tipleri: keuring/AREI hazırlığı, yeni bina tesisatı, kamera & interkom ve EV laadpalen kurulumu."
+      title={ui.meta.projectsTitle}
+      description={ui.meta.projectsDescription}
     >
       <div className="space-y-4">
-        <h1 className="text-3xl font-black tracking-tight md:text-4xl">Referanslar / Projeler</h1>
+        <h1 className="text-3xl font-black tracking-tight md:text-4xl">{ui.projectsPage.title}</h1>
         <p className="max-w-2xl text-sm leading-relaxed text-zinc-200/75">
-          Aşağıdaki örnekler, Elektromax’in Regio Antwerpen’de sık gerçekleştirdiği iş türlerini
-          gösterir. Proje sayfasına ilerleyen dönemde fotoğraf ve daha fazla detay eklenebilir.
+          {ui.projectsPage.lead}
         </p>
       </div>
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">
-        {elektromax.projects.map((p) => (
+        {content.projects.map((p) => (
           <div
             key={p.title}
             className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6"
@@ -48,24 +48,20 @@ export default function Projects() {
       </div>
 
       <section className="mt-14 rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:p-10">
-        <h2 className="text-xl font-extrabold tracking-tight md:text-2xl">
-          Benzer bir iş mi planlıyorsunuz?
-        </h2>
+        <h2 className="text-xl font-extrabold tracking-tight md:text-2xl">{ui.projectsPage.ctaTitle}</h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-zinc-200/75">
-          Keuring öncesi hazırlık, yeni tesisat veya güvenlik sistemleri için kısa bir bilgi paylaşın;
-          size uygun çözümü birlikte netleştirelim.
+          {ui.projectsPage.ctaLead}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Button to="/iletisim">
-            Teklif / randevu isteyin
+            {ui.header.quoteCta}
             <ArrowRight size={16} />
           </Button>
           <Button to="/hizmetler" variant="secondary">
-            Hizmetleri inceleyin
+            {ui.projectsPage.servicesCta}
           </Button>
         </div>
       </section>
     </Layout>
   );
 }
-

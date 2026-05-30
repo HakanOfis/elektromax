@@ -2,7 +2,7 @@ import { ArrowRight, Cable, Cctv, PlugZap, ShieldCheck, Bolt } from "lucide-reac
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
-import { elektromax } from "@/content/elektromax";
+import { useI18n } from "@/hooks/useI18n";
 import { cn } from "@/lib/utils";
 
 const iconBySlug = {
@@ -14,21 +14,21 @@ const iconBySlug = {
 } as const;
 
 export default function Services() {
+  const { content, ui } = useI18n();
   return (
     <Layout
-      title="Hizmetler | Elektromax – Regio Antwerpen"
-      description="Genel elektrik işleri (algemene elektriciteitswerken), keuring/AREI hazırlığı, yeni bina & şantiye tesisatı, EV laadpalen, kamera ve interkom sistemleri."
+      title={ui.meta.servicesTitle}
+      description={ui.meta.servicesDescription}
     >
       <div className="space-y-4">
-        <h1 className="text-3xl font-black tracking-tight md:text-4xl">Hizmetler</h1>
+        <h1 className="text-3xl font-black tracking-tight md:text-4xl">{ui.servicesPage.title}</h1>
         <p className="max-w-2xl text-sm leading-relaxed text-zinc-200/75">
-          Konut, apartman ve işyerlerinde genel elektrik işleri; keuring/AREI hazırlığı; yeni bina ve
-          şantiye projeleri; EV şarj istasyonu ve güvenlik sistemleri.
+          {ui.servicesPage.lead}
         </p>
       </div>
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">
-        {elektromax.services.map((s) => {
+        {content.services.map((s) => {
           const Icon = iconBySlug[s.slug];
           return (
             <Link
@@ -54,7 +54,7 @@ export default function Services() {
                   </div>
                   <p className="mt-2 text-sm leading-relaxed text-zinc-200/72">{s.intro}</p>
                   <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-zinc-100">
-                    Detaylar
+                    {ui.common.details}
                     <ArrowRight size={16} className="transition group-hover:translate-x-0.5" />
                   </div>
                 </div>
@@ -65,24 +65,23 @@ export default function Services() {
       </div>
 
       <section className="mt-14 rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:p-10">
-        <h2 className="text-xl font-extrabold tracking-tight md:text-2xl">Hızlı iletişim</h2>
+        <h2 className="text-xl font-extrabold tracking-tight md:text-2xl">{ui.common.quickContact}</h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-zinc-200/75">
-          Keuring öncesi hazırlık, yeni tesisat veya elektrikle ilgili sorularınız için bize ulaşın.
+          {ui.servicesPage.contactLead}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Button to="/iletisim">
-            Teklif / randevu isteyin
+            {ui.header.quoteCta}
             <ArrowRight size={16} />
           </Button>
           <Button
-            href={`tel:${elektromax.contact.phone.replace(/\s+/g, "")}`}
+            href={`tel:${content.contact.phone.replace(/\s+/g, "")}`}
             variant="secondary"
           >
-            Ara: {elektromax.contact.phone}
+            {ui.common.callPrefix} {content.contact.phone}
           </Button>
         </div>
       </section>
     </Layout>
   );
 }
-
