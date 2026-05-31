@@ -18,10 +18,14 @@ export default defineConfig({
     }),
     traeBadgePlugin({
       variant: 'dark',
-      position: 'bottom-right',
+      position: 'bottom-left',
       prodOnly: true,
       clickable: true,
       clickUrl: 'https://www.trae.ai/solo?showJoin=1',
+      style: {
+        transform: 'scale(0.75)',
+        transformOrigin: 'left bottom',
+      },
       autoTheme: true,
       autoThemeTarget: '#root'
     }), 
