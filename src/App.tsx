@@ -1,4 +1,5 @@
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import ServiceDetail from "@/pages/ServiceDetail";
@@ -6,6 +7,55 @@ import Projects from "@/pages/Projects";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
+import { useLocale } from "@/hooks/useLocale";
+
+function inferLocaleFromPath(pathname: string) {
+  const path = pathname.toLowerCase();
+  const isNl =
+    path === "/diensten" ||
+    path.startsWith("/diensten/") ||
+    path === "/projecten" ||
+    path.startsWith("/projecten/") ||
+    path === "/over-ons" ||
+    path.startsWith("/over-ons/");
+  if (isNl) return "nl" as const;
+
+  const isEn =
+    path === "/services" ||
+    path.startsWith("/services/") ||
+    path === "/projects" ||
+    path.startsWith("/projects/") ||
+    path === "/about" ||
+    path.startsWith("/about/");
+  if (isEn) return "en" as const;
+
+  const isTr =
+    path === "/hizmetler" ||
+    path.startsWith("/hizmetler/") ||
+    path === "/projeler" ||
+    path.startsWith("/projeler/") ||
+    path === "/hakkimizda" ||
+    path.startsWith("/hakkimizda/") ||
+    path === "/iletisim" ||
+    path.startsWith("/iletisim/");
+  if (isTr) return "tr" as const;
+
+  return null;
+}
+
+function LocaleSync() {
+  const location = useLocation();
+  const locale = useLocale((s) => s.locale);
+  const setLocale = useLocale((s) => s.setLocale);
+
+  useEffect(() => {
+    const inferred = inferLocaleFromPath(location.pathname);
+    if (!inferred || inferred === locale) return;
+    setLocale(inferred);
+  }, [location.pathname, locale, setLocale]);
+
+  return null;
+}
 
 export default function App() {
   const isGitHubPages =
@@ -16,6 +66,7 @@ export default function App() {
 
   return (
     <Router>
+      <LocaleSync />
       <Routes>
         <Route path="/" element={<Home />} />
 
