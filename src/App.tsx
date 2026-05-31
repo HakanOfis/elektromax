@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import ServiceDetail from "@/pages/ServiceDetail";
@@ -8,6 +8,12 @@ import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
 export default function App() {
+  const isGitHubPages =
+    import.meta.env.PROD &&
+    typeof window !== "undefined" &&
+    window.location.hostname.endsWith("github.io");
+  const Router = isGitHubPages ? HashRouter : BrowserRouter;
+
   return (
     <Router>
       <Routes>
