@@ -100,7 +100,7 @@ export default function Contact() {
     >
       <div className="space-y-4">
         <h1 className="text-3xl font-black tracking-tight md:text-4xl">{ui.contactPage.title}</h1>
-        <p className="max-w-2xl text-sm leading-relaxed text-zinc-200/75">
+        <p className="max-w-2xl whitespace-pre-line text-sm leading-relaxed text-zinc-200/75">
           {content.contactPage.intro}
         </p>
       </div>
@@ -108,7 +108,7 @@ export default function Contact() {
       <div className="mt-10 grid gap-4 lg:grid-cols-[.95fr_.55fr]">
         <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 md:p-8">
           <h2 className="text-lg font-extrabold tracking-tight md:text-xl">{ui.contactPage.sendMessage}</h2>
-          <p className="mt-3 text-sm leading-relaxed text-zinc-200/75">{content.contactPage.formHelp}</p>
+          <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-200/75">{content.contactPage.formHelp}</p>
 
           <form
             className="mt-6 grid gap-4"
@@ -254,7 +254,7 @@ export default function Contact() {
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
             <div className="text-xs font-semibold text-zinc-200/65">{ui.contactPage.zone}</div>
             <div className="mt-2 text-sm font-semibold text-zinc-100">{content.region}</div>
-            <div className="mt-3 text-sm text-zinc-200/75">{content.contactPage.closing}</div>
+            <div className="mt-3 whitespace-pre-line text-sm text-zinc-200/75">{content.contactPage.closing}</div>
           </div>
         </aside>
       </div>

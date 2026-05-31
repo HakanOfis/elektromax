@@ -184,9 +184,9 @@ export const ui: Record<Locale, UiStrings> = {
       servicesCta: "Bekijk de diensten",
     },
     aboutPage: {
-      workingStyle: "Onze manier van werken",
-      values: "Waarden",
-      localFocus: "Lokaal in Antwerpen",
+      workingStyle: "Samenvatting",
+      values: "Diensten",
+      localFocus: "Extra info",
       contactCta: "Contacteer ons",
       servicesCta: "Bekijk de diensten",
     },
@@ -237,7 +237,7 @@ export const ui: Record<Locale, UiStrings> = {
       projectsTitle: "Projecten | Elektromax – Regio Antwerpen",
       projectsDescription:
         "Voorbeelden: keuring/AREI, nieuwbouwinstallatie, camerabewaking & parlofonie en EV laadpalen.",
-      aboutTitle: "Over ons | Elektromax – Regio Antwerpen",
+      aboutTitle: "Wie zijn wij? | Elektromax – Regio Antwerpen",
       aboutDescription:
         "Elektromax: lokaal in Antwerpen, focus op veiligheid, kwaliteit en duidelijke afspraken. AREI-conforme oplossingen.",
       contactTitle: "Contact | Elektromax – Regio Antwerpen",

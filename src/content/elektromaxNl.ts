@@ -6,7 +6,7 @@ export const elektromaxNl: SiteContent = {
   region: "Regio Antwerpen",
   contact: {
     phone: "+32 485 77 26 30",
-    email: "a.maxelektro@gmail.com",
+    email: "info@maxelektro.be",
     addressLine: "Antwerpen en omgeving",
   },
   socials: [
@@ -399,20 +399,38 @@ export const elektromaxNl: SiteContent = {
     },
   ],
   about: {
-    title: "Over ons",
+    title: "Wie zijn wij?",
     intro:
-      "Elektromax wordt geleid door A. Bilgiç en combineert jaren ervaring met hedendaagse veiligheidsnormen. De focus is eenvoudig: veilige, ordelijke en duurzame elektrische oplossingen voor woningen, appartementen en bedrijven.",
+      "Elektromax is reeds 35 jaren actief in het uitvoeren van elektrotechnische werkzaamheden.\n\nWij werken zowel aan nieuwbouwresidenties als particuliere elektrische installaties en alles wat daarbij komt kijken.\n\nAl deze installaties staan steeds meer en meer in connectie met elkaar en met andere systemen, waardoor “elektriciteit” meer is dan een zekering en een stopcontact.",
     workingStyle: [
-      "Transparant: we leggen uit wat nodig is en waarom",
-      "Afspraak = afspraak: duidelijke planning en opvolging",
-      "Proper werk: nette installatie en verzorgde oplevering",
-      "Klantgericht: oplossing op maat voor eigenaars, syndici en bedrijven",
+      "35 jaar ervaring in elektrotechnische werkzaamheden",
+      "Nieuwbouwresidenties en particuliere installaties",
+      "Oplossingen die mee evolueren met domotica en gekoppelde systemen",
+      "Duidelijke afspraken, nette afwerking en veilige installaties",
     ],
     values: [
+      {
+        title: "Voor volgende werken mag u ons contacteren; hizmetlerimiz:",
+        text: [
+          "✓ Gehele elektrische installatie plaatsen",
+          "◦ Domotica",
+          "◦ Zekeringkast vernieuwen / aanpassen",
+          "◦ Stopcontacten en schakelaars vervangen",
+          "◦ Plaatsen extra stopcontacten of lichtpunten",
+          "◦ Installatie voorbereiden voor de keuring (AREI)",
+          "◦ Eendraadsschema en situatieschema maken",
+          "◦ Plaatsen zonnepanelen",
+          "◦ Plaatsen laadpalen / wallbox",
+          "◦ Batterij plaatsen",
+          "◦ Camera-installatie",
+          "◦ Brandinstallatie",
+          "◦ Rookmelders installeren",
+          "◦ Krachtstroom 400V installeren",
+        ].join("\n"),
+      },
       { title: "Veiligheid", text: "Correcte uitvoering, juiste beveiligingen, logisch geheel." },
       { title: "Kwaliteit", text: "Duurzame oplossingen en nette afwerking." },
       { title: "Eerlijkheid", text: "Duidelijke communicatie en realistisch advies." },
-      { title: "Lange termijn", text: "Vandaag oplossen met oog op later." },
     ],
     localFocus:
       "We werken lokaal in Antwerpen en omgeving en kennen de typische situaties in appartementsgebouwen, renovaties en handelsruimtes. Zoekt u een elektricien Antwerpen? Dan wilt u iemand die snel bereikbaar is en praktisch meedenkt: dat is precies waar we op inzetten.",
@@ -423,7 +441,20 @@ export const elektromaxNl: SiteContent = {
     formHelp:
       "Vul het formulier in en we nemen zo snel mogelijk contact op. Vermeld kort het type gebouw, de locatie, uw vraag en eventuele timing.",
     closing:
-      "Voor snelle informatie kan u bellen of mailen. Elektromax staat klaar in Antwerpen en omgeving voor veilige, AREI-conforme oplossingen.",
+      [
+        "Beste,",
+        "",
+        "Als bedrijf Elektromax wil ik graag wat informatie geven over onszelf. Wij zijn actief in België en onze buurlanden. Onze activiteiten omvatten installatie, parlafonie/videofoon, laadpaal/wallbox installaties en probleemoplossing.",
+        "",
+        "U kunt contact met ons opnemen voor alle elektrische werkzaamheden gerelateerde functies en we zullen graag samenwerken.",
+        "",
+        "Met al onze groeten",
+        "",
+        "Het Elektromax team.",
+        "E-mail: a.maxelektro@gmail.com",
+        "Info: info@maxelektro.be",
+        "Web: www.maxelektro.be",
+      ].join("\n"),
   },
 };
 

@@ -6,7 +6,7 @@ export const elektromaxEn: SiteContent = {
   region: "Antwerp Region",
   contact: {
     phone: "+32 485 77 26 30",
-    email: "a.maxelektro@gmail.com",
+    email: "info@maxelektro.be",
     addressLine: "Antwerp and surroundings",
   },
   socials: [

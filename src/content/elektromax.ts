@@ -81,7 +81,7 @@ export const elektromax: SiteContent = {
   region: "Regio Antwerpen",
   contact: {
     phone: "+32 485 77 26 30",
-    email: "a.maxelektro@gmail.com",
+    email: "info@maxelektro.be",
     addressLine: "Antwerpen ve çevresi",
   },
   socials: [
@@ -476,7 +476,14 @@ export const elektromax: SiteContent = {
   about: {
     title: "Hakkımızda (Over ons)",
     intro:
-      "Elektromax, A. Bilgiç liderliğinde yıllara dayanan tecrübenin getirdiği pratik yaklaşımı modern güvenlik standartlarıyla birleştirerek hizmet verir. Odak; konutlarda, apartmanlarda ve işletmelerde güvenli, düzenli ve uzun ömürlü elektrik altyapısı kurmaktır.",
+      [
+        "⚡ Elektromax – Elektrikte 35 Yıllık Tecrübe!",
+        "Her türlü elektrik işlerinizde uzman kadromuzla hızlı, güvenli ve kaliteli çözümler sunuyoruz.",
+        "Ev, iş yeri veya sanayi… İhtiyacınız olan her yerde yanınızdayız! Güvenilir Hizmet, Usta Dokunuş!",
+        "",
+        "📞 Telefon: 0485772630",
+        "E-posta: a.maxelektro@gmail.com",
+      ].join("\n"),
     workingStyle: [
       "Şeffaf yaklaşım: İhtiyaç netleştirilir, çözüm açık şekilde anlatılır",
       "Randevuya sadakat: Planlı çalışma ve düzenli iletişim",
@@ -484,6 +491,25 @@ export const elektromax: SiteContent = {
       "Müşteri odaklılık: Ev sahibi, syndicus ve işletmelerin farklı ihtiyaçlarına uygun çözüm",
     ],
     values: [
+      {
+        title: "Hizmetlerimiz",
+        text: [
+          "✓ Gehele elektrische installatie plaatsen",
+          "◦ Domotica",
+          "◦ Zekeringkast vernieuwen / aanpassen",
+          "◦ Stopcontacten en schakelaars vervangen",
+          "◦ Plaatsen extra stopcontacten of lichtpunten",
+          "◦ Installatie voorbereiden voor de keuring",
+          "◦ Eendraadsschema en situatieschema maken",
+          "◦ Plaatsen zonnepanelen",
+          "◦ Plaatsen laadpalen walbox",
+          "◦ Batterij plaatsen",
+          "◦ Camera installatie",
+          "◦ Brandinstallatie",
+          "◦ Rookmelders installeren",
+          "◦ Krachtstroom 400V installeren",
+        ].join("\n"),
+      },
       {
         title: "Güvenlik",
         text: "Doğru uygulama, doğru koruma, doğru altyapı.",

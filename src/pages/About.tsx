@@ -12,7 +12,7 @@ export default function About() {
     >
       <div className="space-y-4">
         <h1 className="text-3xl font-black tracking-tight md:text-4xl">{content.about.title}</h1>
-        <p className="max-w-3xl text-sm leading-relaxed text-zinc-200/75">{content.about.intro}</p>
+        <p className="max-w-3xl whitespace-pre-line text-sm leading-relaxed text-zinc-200/75">{content.about.intro}</p>
       </div>
 
       <section className="mt-10 grid gap-4 md:grid-cols-2">
@@ -34,7 +34,7 @@ export default function About() {
             {content.about.values.map((v) => (
               <div key={v.title} className="rounded-2xl border border-white/10 bg-white/[0.02] p-5">
                 <div className="text-sm font-extrabold tracking-tight">{v.title}</div>
-                <div className="mt-2 text-sm text-zinc-200/75">{v.text}</div>
+                <div className="mt-2 whitespace-pre-line text-sm text-zinc-200/75">{v.text}</div>
               </div>
             ))}
           </div>
@@ -43,7 +43,7 @@ export default function About() {
 
       <section className="mt-10 rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:p-10">
         <h2 className="text-xl font-extrabold tracking-tight md:text-2xl">{ui.aboutPage.localFocus}</h2>
-        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-zinc-200/75">
+        <p className="mt-4 max-w-3xl whitespace-pre-line text-sm leading-relaxed text-zinc-200/75">
           {content.about.localFocus}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
