@@ -307,7 +307,7 @@ export default function Home() {
       {/* ══ STATS ══ */}
       <section ref={statsRef as React.RefObject<HTMLElement>} className="border-y border-white/8 bg-black/30">
         <div className={`mx-auto grid max-w-[1100px] grid-cols-2 gap-6 px-6 py-10 md:grid-cols-4 reveal ${statsVisible ? "visible" : ""}`}>
-          <StatItem value={10} suffix="+" label={locale === "nl" ? "Jaar ervaring" : locale === "en" ? "Years exp." : "Yıl deneyim"} visible={statsVisible} />
+          <StatItem value={30} suffix="+" label={locale === "nl" ? "Jaar ervaring" : locale === "en" ? "Years exp." : "Yıl deneyim"} visible={statsVisible} />
           <StatItem value={200} suffix="+" label={locale === "nl" ? "Projecten" : locale === "en" ? "Projects" : "Proje"} visible={statsVisible} />
           <StatItem value={5} suffix="" label={locale === "nl" ? "Diensten" : locale === "en" ? "Services" : "Hizmet"} visible={statsVisible} />
           <StatItem value={100} suffix="%" label="AREI" visible={statsVisible} />
