@@ -94,12 +94,12 @@ export default function SiteHeader() {
             to="/"
             className="group inline-flex items-center gap-2 rounded-full px-3 py-2 transition hover:bg-white/6"
           >
-            <span className="relative grid h-12 w-12 place-items-center overflow-hidden rounded-full bg-white/6 ring-1 ring-white/10">
+            <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-full bg-white/6 ring-1 ring-white/10">
               <span className="absolute inset-0 rounded-full opacity-0 blur-lg transition group-hover:opacity-100 bg-[radial-gradient(circle_at_30%_20%,rgba(255,225,0,.28),transparent_60%)]" />
               <img
                 src={logoSrc}
                 alt={content.name}
-                className="relative h-full w-full object-cover scale-[2.2] scale-x-[2.6]"
+                className="relative h-full w-full object-cover scale-[1.8] scale-x-[2.1]"
               />
             </span>
             <span className="flex flex-col leading-tight">
