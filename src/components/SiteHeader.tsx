@@ -63,12 +63,11 @@ function LangSwitcher() {
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const [logoIdx, setLogoIdx] = useState(0);
   const { theme, toggleTheme } = useTheme();
   const { ui, content } = useI18n();
   const location = useLocation();
 
-  const logoSrc = ["/elektromax-logo.png", "/favicon.svg"][logoIdx] ?? "/favicon.svg";
+  const logoSrc = "/elektromax-mark.png";
 
   const telHref = useMemo(
     () => `tel:${content.contact.phone.replace(/\s+/g, "")}`,
@@ -101,7 +100,6 @@ export default function SiteHeader() {
                 src={logoSrc}
                 alt={content.name}
                 className="relative h-7 w-7 object-contain"
-                onError={() => setLogoIdx((i) => (i < 1 ? i + 1 : i))}
               />
             </span>
             <span className="flex flex-col leading-tight">
