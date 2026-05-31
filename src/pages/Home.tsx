@@ -1,4 +1,5 @@
-import { ArrowRight, Bolt, Cable, Cctv, CheckCircle2, Phone, PlugZap, ShieldCheck, Zap, type LucideIcon } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowRight, Bolt, Cable, Cctv, CheckCircle2, Mail, MessageCircle, Phone, PlugZap, ShieldCheck, X, Zap, type LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import Button from "@/components/Button";
@@ -92,6 +93,7 @@ function ServiceCard({ slug, title, badge, intro, detailLabel, to }: {
 /* ── Main page ── */
 export default function Home() {
   const { content, ui, locale } = useI18n();
+  const [offerOpen, setOfferOpen] = useState(false);
   const [heroRef, heroVisible] = useScrollReveal(0.05);
   const [statsRef, statsVisible] = useScrollReveal();
   const [servRef, servVisible] = useScrollReveal();
@@ -101,6 +103,53 @@ export default function Home() {
   const telHref = `tel:${content.contact.phone.replace(/\s+/g, "")}`;
   const mailHref = `mailto:${content.contact.email}`;
 
+  const offerText =
+    "GRATIS offerte!\n" +
+    "-regio Antwerpen\n" +
+    "-in orde brengen van afgekeurde installaties\n" +
+    "-35jaar ervaring,\n" +
+    "\n" +
+    "-voor een geldig keuringsattest huis,dit attest is geldig voor 25jaar geldig.\n" +
+    "-winkeling attest 5jaar geldig\n" +
+    "\n" +
+    "-tekenen situatie en eendraadsschema's\n" +
+    "-parlefonie biticino\n" +
+    "-videofonie biticino\n" +
+    "-zekeringkast vernieuwen maken\n" +
+    "-aanleggen van een aarding\n" +
+    "-Nieuwbouw en renovatie\n" +
+    "-storing of een kortsluiting in order maken\n" +
+    "-Laadpale&walbox\n" +
+    "-industriële projecten";
+
+  const waHref = useMemo(() => {
+    const number = content.contact.phone.replace(/\D/g, "");
+    const message =
+      locale === "nl"
+        ? "Hallo, ik wil graag een gratis offerte."
+        : locale === "en"
+        ? "Hello, I would like a free quote."
+        : "Merhaba, ücretsiz teklif almak istiyorum.";
+    return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+  }, [content.contact.phone, locale]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const key = "elektromax.offer.popup.v1";
+    if (window.sessionStorage.getItem(key) === "1") return;
+    setOfferOpen(true);
+    window.sessionStorage.setItem(key, "1");
+  }, []);
+
+  useEffect(() => {
+    if (!offerOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOfferOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [offerOpen]);
+
   const tags = locale === "nl"
     ? ["Woning", "Appartement", "Handelspand", "Werf"]
     : locale === "en"
@@ -109,6 +158,64 @@ export default function Home() {
 
   return (
     <Layout title={ui.meta.homeTitle} description={ui.meta.homeDescription} className="!pt-0 !px-0 !max-w-none">
+      {offerOpen ? (
+        <div
+          className="fixed inset-0 z-[60] grid place-items-center bg-black/70 p-6 backdrop-blur-sm"
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setOfferOpen(false);
+          }}
+        >
+          <div className="w-full max-w-xl rounded-3xl border border-white/10 bg-[#0e0f14] shadow-[0_0_60px_-18px_rgba(0,0,0,.85)]">
+            <div className="flex items-start justify-between gap-4 border-b border-white/10 p-6">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-bold text-orange-400">
+                  {locale === "nl" ? "GRATIS offerte" : locale === "en" ? "Free quote" : "Ücretsiz teklif"}
+                </div>
+                <div className="mt-3 text-xl font-black tracking-tight text-zinc-100">
+                  {locale === "nl" ? "Interesse?" : locale === "en" ? "Interested?" : "İlgileniyor musunuz?"}
+                </div>
+              </div>
+              <button
+                type="button"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-200 transition hover:bg-white/8"
+                onClick={() => setOfferOpen(false)}
+                aria-label={locale === "nl" ? "Sluiten" : locale === "en" ? "Close" : "Kapat"}
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="p-6">
+              <div className="whitespace-pre-line text-sm leading-relaxed text-zinc-200/75">{offerText}</div>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <Button href={waHref} className="w-full">
+                  <MessageCircle size={16} />
+                  WhatsApp
+                </Button>
+                <Button
+                  href={`${mailHref}?subject=${encodeURIComponent("GRATIS offerte")}&body=${encodeURIComponent(offerText)}`}
+                  variant="secondary"
+                  className="w-full"
+                >
+                  <Mail size={16} />
+                  {locale === "nl" ? "E-mail" : locale === "en" ? "Email" : "E-posta"}
+                </Button>
+              </div>
+
+              <div className="mt-3 flex justify-center">
+                <button
+                  type="button"
+                  className="rounded-full px-4 py-2 text-sm font-semibold text-zinc-300/80 transition hover:bg-white/5 hover:text-zinc-200"
+                  onClick={() => setOfferOpen(false)}
+                >
+                  {locale === "nl" ? "Niet geïnteresseerd" : locale === "en" ? "Not interested" : "İlgilenmiyorum"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {/* ══ HERO ══ */}
       <section
