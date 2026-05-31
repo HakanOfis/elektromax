@@ -67,7 +67,7 @@ export default function SiteHeader() {
   const { ui, content } = useI18n();
   const location = useLocation();
 
-  const logoSrc = "/elektromax-mark.png";
+  const logoSrc = `${import.meta.env.BASE_URL}elektromax-mark.png`;
 
   const telHref = useMemo(
     () => `tel:${content.contact.phone.replace(/\s+/g, "")}`,
