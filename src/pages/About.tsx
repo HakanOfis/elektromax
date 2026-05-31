@@ -47,11 +47,11 @@ export default function About() {
           {content.about.localFocus}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button to="/iletisim">
+          <Button to={ui.routes.contact}>
             {ui.aboutPage.contactCta}
             <ArrowRight size={16} />
           </Button>
-          <Button to="/hizmetler" variant="secondary">
+          <Button to={ui.routes.services} variant="secondary">
             {ui.aboutPage.servicesCta}
           </Button>
         </div>

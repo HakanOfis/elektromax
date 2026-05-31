@@ -21,6 +21,7 @@ export default function App() {
 
         {/* NL */}
         <Route path="/diensten" element={<Services />} />
+        <Route path="/diensten/:slug" element={<ServiceDetail />} />
         <Route path="/diensten/algemene-elektriciteitswerken" element={<ServiceDetail slug="genel-elektrik" />} />
         <Route path="/diensten/keuring-arei" element={<ServiceDetail slug="keuring-arei" />} />
         <Route path="/diensten/nieuwbouw-werf" element={<ServiceDetail slug="yeni-bina-santiye" />} />
@@ -32,6 +33,7 @@ export default function App() {
 
         {/* EN */}
         <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="/services/general-electrical-works" element={<ServiceDetail slug="genel-elektrik" />} />
         <Route path="/services/inspection-arei" element={<ServiceDetail slug="keuring-arei" />} />
         <Route path="/services/new-construction" element={<ServiceDetail slug="yeni-bina-santiye" />} />
@@ -42,6 +44,7 @@ export default function App() {
 
         {/* TR */}
         <Route path="/hizmetler" element={<Services />} />
+        <Route path="/hizmetler/:slug" element={<ServiceDetail />} />
         <Route path="/hizmetler/genel-elektrik" element={<ServiceDetail slug="genel-elektrik" />} />
         <Route path="/hizmetler/keuring-arei" element={<ServiceDetail slug="keuring-arei" />} />
         <Route path="/hizmetler/yeni-bina-santiye" element={<ServiceDetail slug="yeni-bina-santiye" />} />

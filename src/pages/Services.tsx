@@ -33,7 +33,7 @@ export default function Services() {
           return (
             <Link
               key={s.slug}
-              to={`/hizmetler/${s.slug}`}
+              to={`${ui.routes.services}/${s.slug}`}
               className={cn(
                 "group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:bg-white/[0.05]",
               )}
@@ -70,7 +70,7 @@ export default function Services() {
           {ui.servicesPage.contactLead}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button to="/iletisim">
+          <Button to={ui.routes.contact}>
             {ui.header.quoteCta}
             <ArrowRight size={16} />
           </Button>

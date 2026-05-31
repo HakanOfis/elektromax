@@ -1,13 +1,14 @@
 import { ArrowRight, ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
 import { getService, type ServiceSlug } from "@/content";
 import { useI18n } from "@/hooks/useI18n";
 import { cn } from "@/lib/utils";
+import NotFound from "@/pages/NotFound";
 
 type Props = {
-  slug: ServiceSlug;
+  slug?: ServiceSlug;
 };
 
 function SideNav({ active }: { active: ServiceSlug }) {
@@ -19,7 +20,7 @@ function SideNav({ active }: { active: ServiceSlug }) {
         {content.services.map((s) => (
           <Link
             key={s.slug}
-            to={`/hizmetler/${s.slug}`}
+            to={`${ui.routes.services}/${s.slug}`}
             className={cn(
               "rounded-2xl border border-white/10 bg-white/[0.02] px-4 py-3 text-sm font-semibold text-zinc-200/80 transition hover:bg-white/[0.05] hover:text-zinc-100",
               s.slug === active && "bg-white/[0.06] text-zinc-100",
@@ -69,7 +70,16 @@ function Block({
 
 export default function ServiceDetail({ slug }: Props) {
   const { locale, content, ui } = useI18n();
-  const service = getService(locale, slug);
+  const params = useParams();
+  const resolvedSlug = (params.slug ?? slug) as ServiceSlug | undefined;
+  if (!resolvedSlug) return <NotFound />;
+
+  let service: ReturnType<typeof getService>;
+  try {
+    service = getService(locale, resolvedSlug);
+  } catch {
+    return <NotFound />;
+  }
 
   return (
     <Layout title={service.seoTitle} description={service.seoDescription}>
@@ -78,7 +88,7 @@ export default function ServiceDetail({ slug }: Props) {
           {ui.nav.home}
         </Link>
         <ChevronRight size={14} />
-        <Link className="hover:text-zinc-100" to="/hizmetler">
+        <Link className="hover:text-zinc-100" to={ui.routes.services}>
           {ui.nav.services}
         </Link>
         <ChevronRight size={14} />
@@ -119,7 +129,7 @@ export default function ServiceDetail({ slug }: Props) {
                 {service.cta.primaryLabel}
                 <ArrowRight size={16} />
               </Button>
-              <Button to="/iletisim" variant="secondary">
+              <Button to={ui.routes.contact} variant="secondary">
                 {ui.common.goToContact}
               </Button>
             </div>
@@ -127,7 +137,7 @@ export default function ServiceDetail({ slug }: Props) {
         </div>
 
         <aside className="space-y-4">
-          <SideNav active={slug} />
+          <SideNav active={resolvedSlug} />
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
             <div className="text-xs font-semibold text-zinc-200/65">{ui.common.region}</div>
             <div className="mt-2 text-sm font-semibold text-zinc-100">{content.region}</div>
@@ -138,7 +148,7 @@ export default function ServiceDetail({ slug }: Props) {
               <Button href={`tel:${content.contact.phone.replace(/\s+/g, "")}`} variant="secondary">
                 {ui.common.callPrefix} {content.contact.phone}
               </Button>
-              <Button to="/iletisim" variant="secondary">
+              <Button to={ui.routes.contact} variant="secondary">
                 {ui.common.openForm}
               </Button>
             </div>

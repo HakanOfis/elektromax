@@ -53,11 +53,11 @@ export default function Projects() {
           {ui.projectsPage.ctaLead}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Button to="/iletisim">
+          <Button to={ui.routes.contact}>
             {ui.header.quoteCta}
             <ArrowRight size={16} />
           </Button>
-          <Button to="/hizmetler" variant="secondary">
+          <Button to={ui.routes.services} variant="secondary">
             {ui.projectsPage.servicesCta}
           </Button>
         </div>

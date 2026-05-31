@@ -28,11 +28,11 @@ export const elektromaxNl: SiteContent = {
     ctas: [
       {
         label: "Contacteer ons voor controle vóór de keuring",
-        to: "/iletisim",
+        to: "/contact",
       },
       {
         label: "Vraag een gratis bezoek / offerte",
-        to: "/iletisim",
+        to: "/contact",
       },
     ],
     trust: [
@@ -123,9 +123,9 @@ export const elektromaxNl: SiteContent = {
         title: "Elektrische werken zonder verrassingen",
         subtitle: "Stuur kort uw situatie en vraag een bezoek/offerte.",
         primaryLabel: "Gratis bezoek aanvragen",
-        primaryTo: "/iletisim",
+        primaryTo: "/contact",
         secondaryLabel: "Alle diensten bekijken",
-        secondaryTo: "/hizmetler",
+        secondaryTo: "/diensten",
       },
     },
     {
@@ -192,9 +192,9 @@ export const elektromaxNl: SiteContent = {
         title: "Maak uw installatie klaar voor de keuring",
         subtitle: "Geef kort door om welk pand het gaat en wat de deadline is.",
         primaryLabel: "Afspraak aanvragen",
-        primaryTo: "/iletisim",
+        primaryTo: "/contact",
         secondaryLabel: "Contacteer Elektromax",
-        secondaryTo: "/iletisim",
+        secondaryTo: "/contact",
       },
     },
     {
@@ -247,9 +247,9 @@ export const elektromaxNl: SiteContent = {
         title: "Plan uw elektrische installatie van bij de start",
         subtitle: "Stuur plan/omschrijving en timing, dan maken we een voorstel.",
         primaryLabel: "Offerte aanvragen",
-        primaryTo: "/iletisim",
+        primaryTo: "/contact",
         secondaryLabel: "Projecten bekijken",
-        secondaryTo: "/projeler",
+        secondaryTo: "/projecten",
       },
     },
     {
@@ -298,9 +298,9 @@ export const elektromaxNl: SiteContent = {
         title: "Vraag een plaatsbezoek voor uw laadpaal",
         subtitle: "Geef locatie en gebruik (thuis/bedrijf/appartement) door, dan plannen we een check.",
         primaryLabel: "Plaatsbezoek aanvragen",
-        primaryTo: "/iletisim",
+        primaryTo: "/contact",
         secondaryLabel: "Andere diensten",
-        secondaryTo: "/hizmetler",
+        secondaryTo: "/diensten",
       },
     },
     {
@@ -366,9 +366,9 @@ export const elektromaxNl: SiteContent = {
         title: "Versterk uw toegangscontrole en veiligheid",
         subtitle: "Vertel kort waar het systeem nodig is, dan stellen we een oplossing voor.",
         primaryLabel: "Contacteer ons",
-        primaryTo: "/iletisim",
+        primaryTo: "/contact",
         secondaryLabel: "Projecten bekijken",
-        secondaryTo: "/projeler",
+        secondaryTo: "/projecten",
       },
     },
   ],

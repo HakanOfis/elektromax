@@ -64,7 +64,7 @@ function LangSwitcher() {
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
-  const { locale, ui, content } = useI18n();
+  const { ui, content } = useI18n();
   const location = useLocation();
 
   const telHref = useMemo(
