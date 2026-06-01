@@ -24,14 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - id: base
-        run: |
-          if [[ "${{ github.event.repository.name }}" == *.github.io ]]; then
-            echo "value=/" >> "$GITHUB_OUTPUT"
-          else
-            echo "value=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
-          fi
-      - run: npm run build -- --base=${{ steps.base.outputs.value }}
+      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
