@@ -231,7 +231,7 @@ export default function Home() {
         <div className="relative mx-auto w-full max-w-[1100px] px-6 py-20 md:py-28">
           <div className="grid gap-12 md:grid-cols-[1.4fr_1fr] md:items-center">
             {/* Left */}
-            <div className={`space-y-7 reveal reveal-left ${heroVisible ? "visible" : ""}`}>
+            <div className={`min-w-0 space-y-7 reveal reveal-left ${heroVisible ? "visible" : ""}`}>
               <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-xs font-bold text-orange-400">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-60" />
@@ -240,11 +240,11 @@ export default function Home() {
                 {content.region} · {content.sector}
               </div>
 
-              <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-zinc-50 md:text-6xl">
+              <h1 className="break-words hyphens-auto text-4xl font-black leading-[1.08] tracking-tight text-zinc-50 md:text-6xl">
                 {content.home.headline}
               </h1>
 
-              <p className="max-w-xl text-base leading-relaxed text-zinc-400 md:text-lg">
+              <p className="max-w-xl break-words text-base leading-relaxed text-zinc-400 md:text-lg">
                 {content.home.intro}
               </p>
 
@@ -272,7 +272,7 @@ export default function Home() {
             </div>
 
             {/* Right — quick contact + checklist */}
-            <div className={`space-y-3 reveal reveal-right delay-200 ${heroVisible ? "visible" : ""}`}>
+            <div className={`min-w-0 space-y-3 reveal reveal-right delay-200 ${heroVisible ? "visible" : ""}`}>
               <div className="rounded-2xl border border-white/10 bg-black/50 p-5 backdrop-blur-sm">
                 <div className="mb-3 text-xs font-bold uppercase tracking-widest text-zinc-500">{ui.home.quickContactTitle}</div>
                 <a href={telHref} className="flex items-center justify-between rounded-xl border border-orange-500/20 bg-orange-500/8 px-4 py-3 text-sm font-semibold text-zinc-100 transition hover:border-orange-500/40">
