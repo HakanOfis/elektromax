@@ -1,26 +1,37 @@
 <!doctype html>
-<html lang="nl-BE">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elektromax | Elektricien Regio Antwerpen</title>
-    <meta name="description" content="Algemene elektriciteitswerken, keuring/AREI voorbereiding, nieuwbouw, EV laadpalen en beveiligingssystemen in Regio Antwerpen." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script>
-      (function () {
-        var p = window.location.search.slice(1).split('&').find(function (s) { return s.startsWith('p='); });
-        if (p) {
-          var path = decodeURIComponent(p.slice(2));
-          window.history.replaceState(null, '', path || '/');
-        }
-      })();
+    <meta name="theme-color" content="#06173a" />
+    <title>Elektromax | Elektricien Antwerpen – Regio Antwerpen</title>
+    <meta
+      name="description"
+      content="Algemene elektriciteitswerken, keuring/AREI voorbereiding, nieuwbouw & werfinstallaties, EV laadpalen, camerabewaking en parlofonie in Regio Antwerpen. 35 jaar ervaring, gratis offerte."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elektromax | Elektricien Antwerpen" />
+    <meta property="og:description" content="35 jaar ervaring in elektrotechnische werken. Keuring, laadpalen, zonnepanelen, domotica en meer. Gratis offerte." />
+    <meta property="og:url" content="https://www.maxelektro.be/" />
+    <meta property="og:locale" content="nl_BE" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "Elektromax",
+        "url": "https://www.maxelektro.be/",
+        "telephone": "+32485772630",
+        "email": "info@maxelektro.be",
+        "areaServed": { "@type": "AdministrativeArea", "name": "Antwerpen" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Antwerpen", "addressCountry": "BE" },
+        "sameAs": ["https://www.instagram.com/amax5522", "https://x.com/amax5522"],
+        "knowsLanguage": ["nl", "en", "tr"]
+      }
     </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

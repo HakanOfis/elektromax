@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Offline tek dosyalık sürüm
+dist-offline
