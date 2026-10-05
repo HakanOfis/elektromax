@@ -1,0 +1,2318 @@
+{
+  "company": {
+    "phone": "+32 485 77 26 30",
+    "email": "info@maxelektro.be",
+    "socials": [
+      {
+        "label": "Instagram",
+        "handle": "amax5522",
+        "url": "https://www.instagram.com/amax5522"
+      },
+      {
+        "label": "X",
+        "handle": "amax5522",
+        "url": "https://x.com/amax5522"
+      }
+    ]
+  },
+  "images": {
+    "hero": "elektricien-kast.webp",
+    "heroSmall": "laadpaal.webp",
+    "keuring": "zekeringkast.webp",
+    "trust": "elektricien-werf.webp",
+    "about": "elektricien-meting.webp",
+    "aboutHero": "woning-avond.webp",
+    "servicesHero": "bekabeling-kast.webp",
+    "projectsHero": "nieuwbouw.webp",
+    "contactHero": "kabels.webp",
+    "service-genel-elektrik": "algemeen.webp",
+    "service-keuring-arei": "zekeringkast.webp",
+    "service-yeni-bina-santiye": "nieuwbouw.webp",
+    "service-ev-laadpalen": "laadpaal.webp",
+    "service-kamera-interkom": "camera.webp"
+  },
+  "content": {
+    "nl": {
+      "name": "Elektromax",
+      "sector": "Algemene elektriciteitswerken",
+      "region": "Regio Antwerpen",
+      "contact": {
+        "addressLine": "Antwerpen en omgeving"
+      },
+      "home": {
+        "headline": "Veilige elektriciteitsoplossingen voor woningen, handelspanden en werven in Antwerpen",
+        "intro": "Elektromax werkt in de Regio Antwerpen (Antwerpen en omgeving) voor woningen, appartementen en kleine tot middelgrote bedrijven. Van algemene elektriciteitswerken tot AREI/keuring-voorbereiding en volledige installaties voor nieuwbouw en werven: we focussen op veiligheid, nette afwerking en een duidelijk traject.",
+        "ctas": [
+          {
+            "label": "Contacteer ons voor controle vóór de keuring",
+            "to": "/contact"
+          },
+          {
+            "label": "Vraag een gratis bezoek / offerte",
+            "to": "/contact"
+          }
+        ],
+        "trust": [
+          {
+            "title": "AREI-conform",
+            "text": "Installaties volgens de regels, klaar voor de elektrische keuring."
+          },
+          {
+            "title": "Veiligheidsfocus",
+            "text": "Correcte bekabeling, juiste beveiligingen en een ordelijke kast."
+          },
+          {
+            "title": "Lokaal in Antwerpen",
+            "text": "Kennis van gebouwtypes en renovatie-uitdagingen in de regio."
+          },
+          {
+            "title": "Duidelijk proces",
+            "text": "Bezoek → plan → uitvoering → oplevering met heldere communicatie."
+          }
+        ],
+        "audience": "Voor eigenaars: een veilige en betrouwbare installatie. Voor syndici: oplossingen voor gemeenschappelijke delen en duidelijke opvolging. Voor bedrijven: planmatige werken met oog op continuïteit. Zoekt u een elektricien in Antwerpen? Dan is snelle bereikbaarheid en een praktisch voorstel belangrijk: daar focussen we op."
+      },
+      "services": [
+        {
+          "slug": "genel-elektrik",
+          "badge": "algemene elektriciteitswerken",
+          "title": "Algemene elektriciteitswerken",
+          "intro": "Van nieuwe aansluitingen tot modernisering: veilige, nette en goed geplande elektrische werken voor woning, appartement en handelspand.",
+          "seoTitle": "Algemene elektriciteitswerken | Elektricien Antwerpen – Elektromax",
+          "seoDescription": "Regio Antwerpen: algemene elektriciteitswerken, installatie en renovatie, verlichting, zekeringkast en herstellingen. Elektromax – elektricien Antwerpen.",
+          "blocks": [
+            {
+              "heading": "Wat valt eronder?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Een elektrische installatie groeit mee met uw woning of zaak: extra stopcontacten, nieuwe verlichting, aanpassingen na renovatie of een zekeringkast die niet meer past bij het verbruik. Elektromax voert algemene elektriciteitswerken uit met aandacht voor veiligheid en een ordelijke afwerking."
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Nieuwe installatie en uitbreidingen",
+                    "Renovatie en modernisering van bestaande bekabeling",
+                    "Extra stopcontacten, schakelaars en lichtpunten",
+                    "Zekeringkast ordenen, uitbreiden of vernieuwen",
+                    "Storingsdiagnose en herstellingen"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Voor wie?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Eigenaars die net verhuisd zijn en zekerheid willen",
+                    "Renovaties (woning of appartement)",
+                    "Kantoren en winkels met nieuwe toestellen of extra lijnen",
+                    "Syndici voor gemeenschappelijke delen en opvolging"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Veiligheid en AREI",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Kleine fouten kunnen later uitmonden in storingen of risico’s. Daarom werken we met correcte bekabeling, passende beveiligingen en een logische opbouw van de elektrische kast. We houden rekening met AREI, zodat uw installatie veilig én controleerbaar is."
+                }
+              ]
+            },
+            {
+              "heading": "Zoekwoorden",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Elektricien Antwerpen, algemene elektriciteitswerken regio Antwerpen."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Elektrische werken zonder verrassingen",
+            "subtitle": "Stuur kort uw situatie en vraag een bezoek/offerte.",
+            "primaryLabel": "Gratis bezoek aanvragen",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Alle diensten bekijken",
+            "secondaryTo": "/diensten"
+          }
+        },
+        {
+          "slug": "keuring-arei",
+          "title": "Keuring / AREI voorbereiding",
+          "intro": "We controleren uw bestaande installatie, zoeken tekortkomingen en brengen alles in orde voor de elektrische keuring volgens AREI.",
+          "seoTitle": "Keuring / AREI voorbereiding – Elektromax | Regio Antwerpen",
+          "seoDescription": "Antwerpen: controle vóór de elektrische keuring, vaststellen van fouten, aanpassingen en AREI-conforme afwerking. Elektromax.",
+          "blocks": [
+            {
+              "heading": "Wat is een keuring / AREI?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "In België is een elektrische keuring nodig in situaties zoals verkoop, verhuur of grotere renovaties. AREI beschrijft de veiligheidsregels voor elektrische installaties. Het doel is eenvoudig: een veilige installatie die voldoet aan de normen."
+                }
+              ]
+            },
+            {
+              "heading": "Hoe helpt Elektromax?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Plaatsbezoek en controle van de bestaande installatie",
+                    "Fouten en ontbrekende punten detecteren",
+                    "Aanpassingen en herstellingen uitvoeren",
+                    "Alles klaarzetten zodat u met vertrouwen de keuring ingaat"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Typische problemen",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Oude gebouwen met onduidelijke of gemengde bekabeling",
+                    "Rommelige of onderbeveiligde zekeringkast",
+                    "Niet-standaard aansluitingen of latere uitbreidingen",
+                    "Gebrek aan logische ordening/labeling"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Voordelen",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Minder tijdverlies door vooraf duidelijkheid",
+                    "Minder kans op extra kosten voor een herkeuring",
+                    "Veiliger en netter geheel op lange termijn"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Maak uw installatie klaar voor de keuring",
+            "subtitle": "Geef kort door om welk pand het gaat en wat de deadline is.",
+            "primaryLabel": "Afspraak aanvragen",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Contacteer Elektromax",
+            "secondaryTo": "/contact"
+          }
+        },
+        {
+          "slug": "yeni-bina-santiye",
+          "title": "Nieuwbouw & werfinstallaties",
+          "intro": "Volledige elektrische installatie voor nieuwbouw en werven: planmatig, proper en in overleg met andere aannemers.",
+          "seoTitle": "Nieuwbouw & werf elektrische installatie – Elektromax | Antwerpen",
+          "seoDescription": "Regio Antwerpen: volledige elektrische installatie voor nieuwbouw en werven: bekabeling, zekeringkast, stopcontacten en verlichting.",
+          "blocks": [
+            {
+              "heading": "Scope voor nieuwbouw",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Bekabeling en leidingen volgens plan",
+                    "Stopcontacten, schakelaars en verlichtingspunten",
+                    "Zekeringkast opbouw en ordening",
+                    "Beveiligingen en normgerichte uitvoering (AREI)"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Werfervaring en coördinatie",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Op een werf is timing cruciaal. We werken gefaseerd volgens planning, houden rekening met andere ploegen en zorgen dat elke fase netjes wordt opgeleverd."
+                }
+              ]
+            },
+            {
+              "heading": "Voordeel voor bouwheer / aannemer",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Eén aanspreekpunt en duidelijke opvolging",
+                    "Propere, controleerbare en standaardconforme installatie",
+                    "Praktische ondersteuning bij wijzigingen onderweg"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Plan uw elektrische installatie van bij de start",
+            "subtitle": "Stuur plan/omschrijving en timing, dan maken we een voorstel.",
+            "primaryLabel": "Offerte aanvragen",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Projecten bekijken",
+            "secondaryTo": "/projecten"
+          }
+        },
+        {
+          "slug": "ev-laadpalen",
+          "badge": "EV laadpalen",
+          "title": "Laadpaal installatie (EV laadpalen)",
+          "intro": "Laadpalen voor thuis, appartementen en bedrijven: veilige voeding, correcte beveiliging en nette montage.",
+          "seoTitle": "EV laadpaal installatie – Elektromax | Regio Antwerpen",
+          "seoDescription": "Antwerpen: EV laadpalen installeren met controle van capaciteit, veilige bekabeling, beveiligingen en indienststelling.",
+          "blocks": [
+            {
+              "heading": "Waarom een eigen laadpunt?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Met de groei van elektrische wagens wordt een eigen laadpunt thuis of op het werk een groot comfort. Een correcte installatie is belangrijk voor veiligheid én laadprestaties."
+                }
+              ]
+            },
+            {
+              "heading": "Oplossingen die we plaatsen",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Thuislaadpaal of wallbox",
+                    "Voorbereiding en infrastructuur in appartementsgarages",
+                    "Laadpunten op bedrijfssites voor personeel/klanten"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Technisch, maar begrijpelijk",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We kijken naar beschikbare capaciteit, geschikte kabelsectie en correcte beveiligingen (zekering/ differentieel). Zo krijgt u een veilige installatie die past bij uw verbruik en toekomstplannen."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Vraag een plaatsbezoek voor uw laadpaal",
+            "subtitle": "Geef locatie en gebruik (thuis/bedrijf/appartement) door, dan plannen we een check.",
+            "primaryLabel": "Plaatsbezoek aanvragen",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Andere diensten",
+            "secondaryTo": "/diensten"
+          }
+        },
+        {
+          "slug": "kamera-interkom",
+          "badge": "camerabewaking • videofonie",
+          "title": "Camerabewaking & parlofonie",
+          "intro": "Camerabewaking en videofonie/parlofonie voor appartementen, woningen en zaken: bekabeling, montage en in dienst stellen.",
+          "seoTitle": "Camerabewaking en parlofonie – Elektromax | Antwerpen",
+          "seoDescription": "Regio Antwerpen: camerabewaking, intercom, videofonie/parlofonie installatie. Advies, montage, bekabeling en oplevering.",
+          "blocks": [
+            {
+              "heading": "Camerabewaking (camerabewaking)",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Inkom en gemeenschappelijke delen van appartementsgebouwen",
+                    "Parking, magazijn en opslagruimtes",
+                    "Binnen- en buitenzones van winkels en kantoren"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Intercom / videofonie (parlofonie)",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Toegangscontrole voor appartementen",
+                    "Deurcommunicatie voor woningen",
+                    "Bezoekers- en leveringsbeheer voor bedrijven"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Voordelen",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Meer veiligheid en afschrikking",
+                    "Controle over bezoekers en leveringen",
+                    "Mogelijkheid tot opname en terugkijken (afhankelijk van systeem)"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Onze aanpak",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We helpen het juiste systeem kiezen, plaatsen alles netjes en zorgen voor correcte bekabeling en opstart. Doel: stabiele werking en gebruiksgemak."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Versterk uw toegangscontrole en veiligheid",
+            "subtitle": "Vertel kort waar het systeem nodig is, dan stellen we een oplossing voor.",
+            "primaryLabel": "Contacteer ons",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Projecten bekijken",
+            "secondaryTo": "/projecten"
+          }
+        }
+      ],
+      "projects": [
+        {
+          "title": "Appartement in Antwerpen: voorbereiding voor keuring",
+          "description": "We stelden rommelige bekabeling en een ongeordende zekeringkast vast. Na correcties en ordening werd de installatie klaar gezet voor AREI/keuring met meer veiligheid en minder risico op herkeuring.",
+          "tags": [
+            "Keuring",
+            "AREI",
+            "Appartement"
+          ],
+          "image": "bekabeling-kast.webp"
+        },
+        {
+          "title": "Nieuwbouw: volledige elektrische installatie",
+          "description": "Stopcontacten, verlichting en zekeringkast werden volgens planning geplaatst. We werkten gefaseerd met coördinatie op de werf en leverden een ordelijke installatie op.",
+          "tags": [
+            "Nieuwbouw",
+            "Werf",
+            "Installatie"
+          ],
+          "image": "elektricien-werf.webp"
+        },
+        {
+          "title": "Bedrijf: camerabewaking en intercom",
+          "description": "Camerapunten werden gepland voor inkom en kritieke zones, bekabeling werd netjes voorzien en systeem werd in dienst gesteld. Aanvullend werd een intercomoplossing geplaatst voor toegangsbeheer.",
+          "tags": [
+            "Camerabewaking",
+            "Videofonie",
+            "Bedrijf"
+          ],
+          "image": "camera-wand.webp"
+        },
+        {
+          "title": "EV laadpaal: montage en indienststelling",
+          "description": "Capaciteit en beveiligingen werden gecontroleerd, de juiste voeding werd voorzien en de laadpaal werd veilig gemonteerd en opgestart.",
+          "tags": [
+            "EV",
+            "Laadpaal",
+            "Montage"
+          ],
+          "image": "laadpaal.webp"
+        }
+      ],
+      "about": {
+        "title": "Wie zijn wij?",
+        "intro": "Elektromax is reeds 35 jaren actief in het uitvoeren van elektrotechnische werkzaamheden.\n\nWij werken zowel aan nieuwbouwresidenties als particuliere elektrische installaties en alles wat daarbij komt kijken.\n\nAl deze installaties staan steeds meer en meer in connectie met elkaar en met andere systemen, waardoor “elektriciteit” meer is dan een zekering en een stopcontact.",
+        "workingStyle": [
+          "35 jaar ervaring in elektrotechnische werkzaamheden",
+          "Nieuwbouwresidenties en particuliere installaties",
+          "Oplossingen die mee evolueren met domotica en gekoppelde systemen",
+          "Duidelijke afspraken, nette afwerking en veilige installaties"
+        ],
+        "values": [
+          {
+            "title": "Voor volgende werken mag u ons contacteren; hizmetlerimiz:",
+            "text": "✓ Gehele elektrische installatie plaatsen\n◦ Domotica\n◦ Zekeringkast vernieuwen / aanpassen\n◦ Stopcontacten en schakelaars vervangen\n◦ Plaatsen extra stopcontacten of lichtpunten\n◦ Installatie voorbereiden voor de keuring (AREI)\n◦ Eendraadsschema en situatieschema maken\n◦ Plaatsen zonnepanelen\n◦ Plaatsen laadpalen / wallbox\n◦ Batterij plaatsen\n◦ Camera-installatie\n◦ Brandinstallatie\n◦ Rookmelders installeren\n◦ Krachtstroom 400V installeren"
+          },
+          {
+            "title": "Veiligheid",
+            "text": "Correcte uitvoering, juiste beveiligingen, logisch geheel."
+          },
+          {
+            "title": "Kwaliteit",
+            "text": "Duurzame oplossingen en nette afwerking."
+          },
+          {
+            "title": "Eerlijkheid",
+            "text": "Duidelijke communicatie en realistisch advies."
+          }
+        ],
+        "localFocus": "We werken lokaal in Antwerpen en omgeving en kennen de typische situaties in appartementsgebouwen, renovaties en handelsruimtes. Zoekt u een elektricien Antwerpen? Dan wilt u iemand die snel bereikbaar is en praktisch meedenkt: dat is precies waar we op inzetten."
+      },
+      "contactPage": {
+        "intro": "Voor keuring/AREI voorbereiding, nieuwe installatie of vragen rond elektriciteit: contacteer ons. We werken in de Regio Antwerpen en streven naar snelle opvolging en duidelijke afspraken.",
+        "formHelp": "Vul het formulier in en we nemen zo snel mogelijk contact op. Vermeld kort het type gebouw, de locatie, uw vraag en eventuele timing.",
+        "closing": "Beste,\n\nAls bedrijf Elektromax wil ik graag wat informatie geven over onszelf. Wij zijn actief in België en onze buurlanden. Onze activiteiten omvatten installatie, parlafonie/videofoon, laadpaal/wallbox installaties en probleemoplossing.\n\nU kunt contact met ons opnemen voor alle elektrische werkzaamheden gerelateerde functies en we zullen graag samenwerken.\n\nMet al onze groeten\n\nHet Elektromax team.\nE-mail: a.maxelektro@gmail.com\nInfo: info@maxelektro.be\nWeb: www.maxelektro.be"
+      }
+    },
+    "en": {
+      "name": "Elektromax",
+      "sector": "General electrical works",
+      "region": "Antwerp Region",
+      "contact": {
+        "addressLine": "Antwerp and surroundings"
+      },
+      "home": {
+        "headline": "Safe electrical solutions for homes, commercial premises and construction sites in the Antwerp Region",
+        "intro": "Elektromax serves homes, apartments and small to medium businesses in the Antwerp Region. From general electrical works to AREI/inspection preparation and complete installations for new construction and job sites: we focus on safety, clean execution and a clear process.",
+        "ctas": [
+          {
+            "label": "Contact us for a pre-inspection check",
+            "to": "/contact"
+          },
+          {
+            "label": "Request a free visit / quote",
+            "to": "/contact"
+          }
+        ],
+        "trust": [
+          {
+            "title": "AREI-compliant",
+            "text": "Electrical installations in accordance with the rules, ready for the inspection process."
+          },
+          {
+            "title": "Safety focus",
+            "text": "Correct wiring, correct protection and an organised distribution board."
+          },
+          {
+            "title": "Clear process",
+            "text": "We explain what we do and why — no surprises afterwards."
+          }
+        ],
+        "audience": "Whether you are a homeowner preparing for AREI inspection, a property manager looking after common areas, or a business needing a new installation — Elektromax offers a clear process and reliable execution in the Antwerp Region."
+      },
+      "services": [
+        {
+          "slug": "genel-elektrik",
+          "title": "General Electrical Works",
+          "badge": "Residential & Commercial",
+          "intro": "From replacing sockets and switches to full rewiring of an apartment or commercial space: Elektromax carries out general electrical works with a focus on safety and AREI compliance.",
+          "seoTitle": "General Electrical Works Antwerp | Elektromax",
+          "seoDescription": "General electrical works in the Antwerp Region: sockets, switches, distribution boards, rewiring. AREI-compliant, neat finishing.",
+          "blocks": [
+            {
+              "heading": "What does this service include?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Replacing or adding sockets, switches and light points",
+                    "Replacing or upgrading distribution boards (groepenkast)",
+                    "Partial or complete rewiring of a home or apartment",
+                    "Adding extra circuits (washing machine, dryer, EV charger)",
+                    "Checking and repairing existing installations",
+                    "Preparing the installation for AREI inspection"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Why choose Elektromax?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We work in accordance with AREI regulations — the Belgian standard for electrical installations. Every job is finished neatly: cables concealed, distribution board clearly labelled, and the installation ready for inspection or immediate use."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Questions or need a quote?",
+            "subtitle": "Tell us your situation — we will find a suitable solution together.",
+            "primaryLabel": "Request a quote",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Back to services",
+            "secondaryTo": "/services"
+          }
+        },
+        {
+          "slug": "keuring-arei",
+          "title": "Inspection / AREI Preparation",
+          "badge": "Inspection ready",
+          "intro": "Is your property due for an AREI inspection? Or has the inspection already flagged remarks? Elektromax brings your installation up to standard — efficiently and clearly.",
+          "seoTitle": "AREI Inspection Preparation Antwerp | Elektromax",
+          "seoDescription": "AREI inspection preparation in the Antwerp Region: remediation of remarks, distribution board upgrades, earthing and protection.",
+          "blocks": [
+            {
+              "heading": "When is this needed?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Before selling or renting a property (mandatory inspection)",
+                    "After an inspection with non-conformity remarks",
+                    "When buying an older property with an outdated installation",
+                    "When in doubt about the safety of your current installation"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Our approach",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We review your inspection report and handle the required remediation work: earthing, circuit protection, distribution board upgrades, cable corrections and documentation. After the work, your installation is ready for re-inspection."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Need to prepare for inspection?",
+            "subtitle": "Share your report or situation — we will discuss the next steps.",
+            "primaryLabel": "Contact us",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Back to services",
+            "secondaryTo": "/services"
+          }
+        },
+        {
+          "slug": "yeni-bina-santiye",
+          "title": "New Construction & Job Sites",
+          "badge": "New build",
+          "intro": "Complete electrical installation for new-build homes, apartments and commercial spaces. From the first conduit to the final distribution board.",
+          "seoTitle": "New Construction Electrical Installation Antwerp | Elektromax",
+          "seoDescription": "Complete electrical installations for new construction and job sites in the Antwerp Region. AREI-compliant, neatly executed.",
+          "blocks": [
+            {
+              "heading": "What we deliver",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Complete electrical plan and installation for new-build homes",
+                    "Apartment block installations: common areas and individual units",
+                    "Commercial and industrial electrical works",
+                    "Coordination with other trades on site",
+                    "Installation ready for AREI inspection"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Planning and transparency",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We work closely with the contractor or architect to align the electrical plan with the construction schedule. You receive a clear quote before we start, and we keep you informed throughout the project."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Planning a new build?",
+            "subtitle": "Contact us early — good electrical planning saves time later.",
+            "primaryLabel": "Request a quote",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Back to services",
+            "secondaryTo": "/services"
+          }
+        },
+        {
+          "slug": "ev-laadpalen",
+          "title": "EV Charging Stations",
+          "badge": "Electric vehicles",
+          "intro": "Home or business EV charging point installation. Safe, compliant and with the right connection to your distribution board.",
+          "seoTitle": "EV Charging Station Installation Antwerp | Elektromax",
+          "seoDescription": "EV charging station (laadpaal) installation in the Antwerp Region. Home and business. AREI-compliant connection.",
+          "blocks": [
+            {
+              "heading": "What we handle",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Single-phase and three-phase charging points (up to 22 kW)",
+                    "New circuit from distribution board to charging point",
+                    "Distribution board check and upgrade if needed",
+                    "Installation at home, garage or business premises",
+                    "Documentation for AREI compliance"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Important to know",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "A charging point requires a dedicated circuit and the correct protection. We check your existing installation first, so there are no surprises. We can also advise on eligible subsidies for home EV chargers."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Want to install an EV charger?",
+            "subtitle": "We will check your installation and provide a clear quote.",
+            "primaryLabel": "Request a quote",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Back to services",
+            "secondaryTo": "/services"
+          }
+        },
+        {
+          "slug": "kamera-interkom",
+          "title": "CCTV & Intercom Systems",
+          "badge": "Security",
+          "intro": "Camera surveillance and intercom systems for homes and businesses. Professionally installed, neatly integrated into the existing installation.",
+          "seoTitle": "CCTV & Intercom Installation Antwerp | Elektromax",
+          "seoDescription": "Camera surveillance and intercom (parlofonie) installation in the Antwerp Region. Residential and commercial.",
+          "blocks": [
+            {
+              "heading": "What we install",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Outdoor and indoor cameras (wired and wireless)",
+                    "Video doorbells and intercom systems",
+                    "Apartment block intercom with multiple units",
+                    "Integration with existing alarm or access control systems",
+                    "Remote viewing via app"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Clean finish",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "We work as neatly as possible: cables concealed where feasible, equipment discreetly positioned. We also explain how to use the system so you get the most out of your installation from day one."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Questions about security systems?",
+            "subtitle": "Tell us your situation — we will suggest the right solution.",
+            "primaryLabel": "Contact us",
+            "primaryTo": "/contact",
+            "secondaryLabel": "Back to services",
+            "secondaryTo": "/services"
+          }
+        }
+      ],
+      "projects": [
+        {
+          "title": "Home rewiring + AREI preparation",
+          "description": "Complete rewiring of a semi-detached house (1970s) in Antwerp. New distribution board, earthing, circuit protection and preparation for AREI inspection.",
+          "tags": [
+            "Residential",
+            "AREI",
+            "Distribution board"
+          ],
+          "image": "bekabeling-kast.webp"
+        },
+        {
+          "title": "New-build electrical installation",
+          "description": "Complete electrical installation for a new-build detached house: conduit, wiring, distribution board, sockets and lighting.",
+          "tags": [
+            "New build",
+            "Residential",
+            "Distribution board"
+          ],
+          "image": "elektricien-werf.webp"
+        },
+        {
+          "title": "EV charging point — home",
+          "description": "Installation of a 7.4 kW single-phase charging point in a private garage. New dedicated circuit, distribution board upgrade.",
+          "tags": [
+            "EV charger",
+            "Residential",
+            "Distribution board"
+          ],
+          "image": "laadpaal.webp"
+        },
+        {
+          "title": "Apartment block — common areas",
+          "description": "Renewal of communal electrical installation for an apartment building: lighting, sockets, intercom and meter room.",
+          "tags": [
+            "Apartment",
+            "Common areas",
+            "Intercom"
+          ],
+          "image": "woning-avond.webp"
+        },
+        {
+          "title": "CCTV + intercom — commercial",
+          "description": "Installation of 4 outdoor cameras, video doorbell and digital intercom for a commercial property in Antwerp.",
+          "tags": [
+            "CCTV",
+            "Intercom",
+            "Commercial"
+          ],
+          "image": "camera-wand.webp"
+        },
+        {
+          "title": "AREI remediation — rental property",
+          "description": "Remediation of all non-conformity remarks from an AREI inspection report: earthing, circuit protection, distribution board.",
+          "tags": [
+            "AREI",
+            "Remediation",
+            "Rental"
+          ],
+          "image": "zekeringkast.webp"
+        }
+      ],
+      "about": {
+        "title": "About Elektromax",
+        "intro": "Elektromax is an electrical contractor active in the Antwerp Region. We serve homeowners, property managers, syndics and small to medium businesses with a focus on safety, quality and clear communication.",
+        "workingStyle": [
+          "We start with a thorough inspection of the existing situation before proposing any solution.",
+          "We work in accordance with AREI regulations — the Belgian standard for electrical safety.",
+          "Every job is finished neatly: cables concealed, distribution board clearly labelled, clean workspace.",
+          "We keep you informed throughout the project — no surprises afterwards."
+        ],
+        "values": [
+          {
+            "title": "Safety first",
+            "text": "Every installation meets AREI requirements. We do not cut corners on safety."
+          },
+          {
+            "title": "Transparency",
+            "text": "Clear quote before we start. We explain what we do and why."
+          },
+          {
+            "title": "Quality",
+            "text": "Neat execution, quality materials, lasting result."
+          },
+          {
+            "title": "Reliability",
+            "text": "We keep our appointments and finish the job as agreed."
+          }
+        ],
+        "localFocus": "Elektromax is based in the Antwerp Region and mainly active in Antwerp and the surrounding municipalities. This allows us to respond quickly and maintain close contact with our clients."
+      },
+      "contactPage": {
+        "intro": "Do you have a question, need a quote or want to schedule a visit? Get in touch — we usually respond within one working day.",
+        "formHelp": "Describe your situation briefly: type of property, location and what you need. This helps us respond quickly and accurately.",
+        "closing": "Elektromax is active in Antwerp and the surrounding municipalities. Response within one working day."
+      }
+    },
+    "tr": {
+      "name": "Elektromax",
+      "sector": "Algemene elektriciteitswerken",
+      "region": "Regio Antwerpen",
+      "contact": {
+        "addressLine": "Antwerpen ve çevresi"
+      },
+      "home": {
+        "headline": "Antwerpen’de konut, işyeri ve şantiyeler için güvenli elektrik çözümleri",
+        "intro": "Elektromax, Regio Antwerpen’de (Antwerpen ve çevresi) konut, apartman ve işletmelere yönelik genel elektrik işleri, keuring/AREI hazırlığı ve yeni bina elektrik tesisatı alanlarında hizmet verir. Güvenliği ve standartlara uygunluğu merkeze alarak, ihtiyaca göre net ve planlı çözümler sunar.",
+        "ctas": [
+          {
+            "label": "Keuring öncesi elektrik kontrolü için iletişime geçin",
+            "to": "/iletisim"
+          },
+          {
+            "label": "Ücretsiz keşif / teklif isteyin",
+            "to": "/iletisim"
+          }
+        ],
+        "trust": [
+          {
+            "title": "AREI uyumu",
+            "text": "Elektrik tesisatı kurallarına uygun, kontrol sürecine hazır altyapı."
+          },
+          {
+            "title": "Güvenlik odağı",
+            "text": "Doğru kablolama, doğru koruma ve düzenli pano yaklaşımı."
+          },
+          {
+            "title": "Yerel hizmet",
+            "text": "Antwerpen bölgesindeki bina tiplerine ve ihtiyaçlara hakim uygulama."
+          },
+          {
+            "title": "Net süreç",
+            "text": "Keşif → plan → uygulama → teslim adımlarıyla şeffaf ilerleyiş."
+          }
+        ],
+        "audience": "Ev sahipleri için güvenli ve sorunsuz bir altyapı, apartman yöneticileri (syndicus) için ortak alan çözümleri, işletmeler için kesintisiz çalışmayı destekleyen planlı uygulamalar. “Elektricien Antwerpen” arayanlar için hızlı iletişim ve ihtiyaca uygun çözüm odaklı yaklaşım."
+      },
+      "services": [
+        {
+          "slug": "genel-elektrik",
+          "badge": "algemene elektriciteitswerken",
+          "title": "Genel Elektrik İşleri",
+          "intro": "Konut, apartman ve işyerlerinde yeni kurulumdan modernizasyona kadar, güvenli ve düzenli elektrik işleri.",
+          "seoTitle": "Algemene elektriciteitswerken | Elektricien Antwerpen – Elektromax",
+          "seoDescription": "Regio Antwerpen’de algemene elektriciteitswerken: tesisat kurulumu, yenileme, aydınlatma, pano düzenleme ve arıza onarım hizmetleri.",
+          "blocks": [
+            {
+              "heading": "Neleri kapsar?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Elektrik altyapısı zamanla ihtiyaçlara göre değişir: yeni priz noktaları, aydınlatma düzeni, renovasyon sonrası hatların güncellenmesi veya pano kapasitesinin iyileştirilmesi gibi. Elektromax, genel elektrik işlerinde doğru planlama ve temiz işçilikle ilerler."
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Yeni tesisat kurulumu ve mevcut tesisatın düzenlenmesi",
+                    "Elektrik yenileme / modernizasyon",
+                    "Ek priz, anahtar ve aydınlatma noktaları",
+                    "Sigorta panosu düzenleme ve güvenlik iyileştirmeleri",
+                    "Arıza tespiti ve onarım"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Kimler için?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Yeni ev/daire alan ve taşınma öncesi kontrol yaptırmak isteyenler",
+                    "Renovasyon yapan ev sahipleri",
+                    "İşyerini yenileyen ve yeni cihaz/hat ekleyen işletmeler",
+                    "Apartman ortak alanlarında düzen ve güvenlik isteyen syndicus/yöneticiler"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Güvenlik ve AREI uyumu",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Elektrik işlerinde küçük bir hata bile ileride arızaya, cihaz hasarına veya güvenlik riskine dönüşebilir. Bu nedenle doğru kablolama, uygun sigorta/koruma seçimi ve pano düzeni kritik önemdedir. Elektromax uygulamaları AREI kurallarına uygun şekilde planlar."
+                }
+              ]
+            },
+            {
+              "heading": "Anahtar aramalar",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Elektricien Antwerpen, algemene elektriciteitswerken regio Antwerpen."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Elektrik işi planlı ilerlesin",
+            "subtitle": "Keşif ve teklif için kısa bir mesaj bırakın.",
+            "primaryLabel": "Ücretsiz keşif isteyin",
+            "primaryTo": "/iletisim",
+            "secondaryLabel": "Tüm hizmetleri görün",
+            "secondaryTo": "/hizmetler"
+          }
+        },
+        {
+          "slug": "keuring-arei",
+          "title": "Keuring / AREI Hazırlığı",
+          "intro": "Elektrische keuring öncesi mevcut tesisatı kontrol edip eksikleri gidererek sistemi AREI’ye uygun hale getiriyoruz.",
+          "seoTitle": "Keuring / AREI hazırlığı – Elektromax | Regio Antwerpen",
+          "seoDescription": "Antwerpen’de keuring öncesi elektrik kontrolü, eksik tespiti, düzeltme ve AREI’ye uygun hale getirme hizmeti.",
+          "blocks": [
+            {
+              "heading": "Keuring / AREI nedir?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Belçika’da elektrik tesisatı belirli durumlarda kontrolden (keuring) geçmelidir. Ev satışı, kiralama veya büyük renovasyonlarda tesisatın güvenli ve kurallara uygun (AREI) olması beklenir. Amaç, sistemin güvenli çalıştığından emin olmaktır."
+                }
+              ]
+            },
+            {
+              "heading": "Elektromax nasıl yardımcı olur?",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Mevcut tesisatı yerinde inceleme",
+                    "Eksik/hatalı noktaları tespit etme",
+                    "Gerekli düzeltmeleri yapma",
+                    "Keuring öncesi sistemi düzenli ve kontrol edilebilir hale getirme"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Sık görülen sorunlar",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Eski binalarda karışık kablolama",
+                    "Sigorta panosunda düzensizlik ve yetersiz koruma",
+                    "Standart dışı bağlantılar veya sonradan eklenmiş hatlar",
+                    "Etiketleme/organizasyon eksikliği"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Avantajlar",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Zaman kaybını azaltır, süreci netleştirir",
+                    "İkinci kez kontrol masrafı riskini düşürür",
+                    "Daha güvenli ve düzenli bir tesisat sağlar"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Keuring öncesi kontrol için randevu alın",
+            "subtitle": "Kısa bir bilgi paylaşın, en uygun adımı birlikte netleştirelim.",
+            "primaryLabel": "Randevu talep edin",
+            "primaryTo": "/iletisim",
+            "secondaryLabel": "Elektrische keuring için hazırlık",
+            "secondaryTo": "/iletisim"
+          }
+        },
+        {
+          "slug": "yeni-bina-santiye",
+          "title": "Yeni Bina & Şantiye Elektrik Tesisatı",
+          "intro": "Müteahhit ve proje sahipleri için planlı, koordineli ve standartlara uygun komple elektrik tesisatı kurulumu.",
+          "seoTitle": "Yeni bina & şantiye elektrik tesisatı – Elektromax | Antwerpen",
+          "seoDescription": "Antwerpen’de yeni bina ve şantiye projelerinde komple elektrik tesisatı: kablolama, pano, priz ve aydınlatma altyapısı.",
+          "blocks": [
+            {
+              "heading": "Yeni inşaat projeleri için kapsam",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Kablolama altyapısı ve hatların planlı uygulanması",
+                    "Priz, anahtar ve aydınlatma altyapısının hazırlanması",
+                    "Sigorta panosu kurulumu ve düzenleme",
+                    "Gerekli güvenlik korumaları ve standartlara uygun uygulama"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Şantiye disiplini ve koordinasyon",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Şantiye ortamında iş programına uyum ve koordinasyon, proje kalitesi kadar önemlidir. Elektromax, takvime göre aşamalı ilerler ve diğer ekiplerle uyumlu çalışır."
+                }
+              ]
+            },
+            {
+              "heading": "İşveren için avantaj",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Tek elden çözüm ve net iş takibi",
+                    "Düzenli ve standartlara uygun (AREI) tesisat",
+                    "Proje sonrası ihtiyaçlarda destek odaklı yaklaşım"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Projeniz için elektrik altyapısını planlayalım",
+            "subtitle": "Şantiye takvimi, kapsam ve ihtiyaçlarınızı kısaca iletin.",
+            "primaryLabel": "Teklif isteyin",
+            "primaryTo": "/iletisim",
+            "secondaryLabel": "Projeleri görün",
+            "secondaryTo": "/projeler"
+          }
+        },
+        {
+          "slug": "ev-laadpalen",
+          "badge": "EV laadpalen",
+          "title": "Araç Şarj İstasyonu (EV Laadpalen)",
+          "intro": "Ev, apartman otoparkı ve işyerleri için güvenli EV şarj noktası altyapısı ve montajı.",
+          "seoTitle": "EV laadpalen kurulumu – Elektromax | Regio Antwerpen",
+          "seoDescription": "Antwerpen’de EV şarj istasyonu (laadpalen) kurulumu: kapasite kontrolü, güvenli kablolama, koruma ve devreye alma.",
+          "blocks": [
+            {
+              "heading": "Neden özel şarj noktası?",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Elektrikli araç kullanımının artmasıyla birlikte evde veya işyerinde kendi şarj noktanıza sahip olmak konfor sağlar. Doğru kurulum hem güvenlik hem de şarj verimliliği açısından kritiktir."
+                }
+              ]
+            },
+            {
+              "heading": "Sunulan çözümler",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Ev tipi şarj istasyonu kurulumu",
+                    "Apartman otoparkı altyapısı ve ortak alan çözümleri",
+                    "İşyerlerinde personel/müşteri için şarj noktası planlama ve montaj"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Teknik konuları sade anlatım",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Şarj istasyonunda güç kapasitesi, doğru kablo kesiti ve uygun koruma elemanları (sigorta/kaçak akım koruması gibi) güvenlik için önemlidir. Elektromax, sahada değerlendirme yaparak ihtiyaca uygun kurulum hedefler."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "EV şarj istasyonu için keşif talep edin",
+            "subtitle": "Kurulum yeri, mevcut elektrik kapasitesi ve kullanım hedefini kısaca belirtin.",
+            "primaryLabel": "Keşif isteyin",
+            "primaryTo": "/iletisim",
+            "secondaryLabel": "Diğer hizmetler",
+            "secondaryTo": "/hizmetler"
+          }
+        },
+        {
+          "slug": "kamera-interkom",
+          "badge": "camerabewaking • videofonie",
+          "title": "Kamera & Interkom Sistemleri",
+          "intro": "Apartman, ev ve işyerleri için camerabewaking ile videofonie/parlofonie çözümleri: montaj, kablolama ve devreye alma.",
+          "seoTitle": "Camerabewaking ve interkom – Elektromax | Antwerpen",
+          "seoDescription": "Antwerpen’de güvenlik kamerası (camerabewaking) ve interkom/videofonie sistemleri kurulumu: uygun sistem seçimi, montaj ve devreye alma.",
+          "blocks": [
+            {
+              "heading": "Güvenlik kamerası (camerabewaking)",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Apartman girişleri ve ortak alanlar",
+                    "Otopark ve depo alanları",
+                    "İşyeri içi ve dışı izleme noktaları"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Interkom / görüntülü diafon (videofonie / parlofonie)",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Apartmanlarda giriş kontrolü çözümleri",
+                    "Müstakil evlerde kapı önü iletişim ve görüntüleme",
+                    "İşyerlerinde ziyaretçi ve teslimat yönetimi"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Avantajlar",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Güvenlik artışı ve caydırıcılık",
+                    "Ziyaretçi/teslimat kontrolü ile daha düzenli giriş yönetimi",
+                    "Kayıt imkanıyla geriye dönük inceleme (sisteme göre değişebilir)"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "Elektromax’in katkısı",
+              "body": [
+                {
+                  "type": "p",
+                  "text": "Uygun sistem seçimi, montaj, kablolama ve devreye alma adımlarını tek bir planla yönetiriz. Amaç: sorunsuz kullanım ve düzenli kurulum."
+                }
+              ]
+            }
+          ],
+          "cta": {
+            "title": "Güvenlik ve giriş kontrolünü güçlendirin",
+            "subtitle": "Alanı ve ihtiyacı kısaca yazın, size uygun sistemi birlikte seçelim.",
+            "primaryLabel": "İletişime geçin",
+            "primaryTo": "/iletisim",
+            "secondaryLabel": "Projeleri görün",
+            "secondaryTo": "/projeler"
+          }
+        }
+      ],
+      "projects": [
+        {
+          "title": "Antwerpen’de apartman dairesinde keuring öncesi tesisat yenileme",
+          "description": "Eski tesisatta karışık kablolama ve pano düzensizliği tespit edildi. Gerekli düzeltmeler yapılarak hatlar düzenlendi ve sistem AREI kontrolü için hazır hale getirildi.",
+          "tags": [
+            "Keuring",
+            "AREI",
+            "Apartman"
+          ],
+          "image": "bekabeling-kast.webp"
+        },
+        {
+          "title": "Yeni inşaat projesinde komple elektrik tesisatı",
+          "description": "Yeni bina projesinde priz, aydınlatma ve pano altyapısı proje planına uygun kuruldu. Şantiye takvimine göre aşamalı ilerlenerek koordinasyon sağlandı.",
+          "tags": [
+            "Şantiye",
+            "Yeni bina",
+            "Tesisat"
+          ],
+          "image": "elektricien-werf.webp"
+        },
+        {
+          "title": "İşyeri için kamera ve interkom kurulumu",
+          "description": "Giriş ve kritik noktalar için camerabewaking sistemi planlandı, kablolama yapıldı ve devreye alındı. Ek olarak giriş kontrolü için interkom çözümü kuruldu.",
+          "tags": [
+            "Camerabewaking",
+            "Videofonie",
+            "İşyeri"
+          ],
+          "image": "camera-wand.webp"
+        },
+        {
+          "title": "EV şarj istasyonu montajı (ev/işyeri)",
+          "description": "Mevcut elektrik kapasitesi kontrol edildi, uygun hat ve koruma ekipmanları belirlendi. EV laadpalen montajı tamamlandı ve güvenli şekilde devreye alındı.",
+          "tags": [
+            "EV",
+            "Laadpalen",
+            "Kurulum"
+          ],
+          "image": "laadpaal.webp"
+        }
+      ],
+      "about": {
+        "title": "Hakkımızda (Over ons)",
+        "intro": "⚡ Elektromax – Elektrikte 35 Yıllık Tecrübe!\nHer türlü elektrik işlerinizde uzman kadromuzla hızlı, güvenli ve kaliteli çözümler sunuyoruz.\nEv, iş yeri veya sanayi… İhtiyacınız olan her yerde yanınızdayız! Güvenilir Hizmet, Usta Dokunuş!\n\n📞 Telefon: 0485772630\nE-posta: a.maxelektro@gmail.com",
+        "workingStyle": [
+          "Şeffaf yaklaşım: İhtiyaç netleştirilir, çözüm açık şekilde anlatılır",
+          "Randevuya sadakat: Planlı çalışma ve düzenli iletişim",
+          "Güvenli ve temiz işçilik: Uygulama sonrası düzenli teslim anlayışı",
+          "Müşteri odaklılık: Ev sahibi, syndicus ve işletmelerin farklı ihtiyaçlarına uygun çözüm"
+        ],
+        "values": [
+          {
+            "title": "Hizmetlerimiz",
+            "text": "✓ Gehele elektrische installatie plaatsen\n◦ Domotica\n◦ Zekeringkast vernieuwen / aanpassen\n◦ Stopcontacten en schakelaars vervangen\n◦ Plaatsen extra stopcontacten of lichtpunten\n◦ Installatie voorbereiden voor de keuring\n◦ Eendraadsschema en situatieschema maken\n◦ Plaatsen zonnepanelen\n◦ Plaatsen laadpalen walbox\n◦ Batterij plaatsen\n◦ Camera installatie\n◦ Brandinstallatie\n◦ Rookmelders installeren\n◦ Krachtstroom 400V installeren"
+          },
+          {
+            "title": "Güvenlik",
+            "text": "Doğru uygulama, doğru koruma, doğru altyapı."
+          },
+          {
+            "title": "Kalite",
+            "text": "Sağlam ve sürdürülebilir çözümler."
+          },
+          {
+            "title": "Dürüstlük",
+            "text": "Net iletişim ve gerçekçi yönlendirme."
+          },
+          {
+            "title": "Uzun vadeli bakış",
+            "text": "Bugünü çözerken yarını da düşünmek."
+          }
+        ],
+        "localFocus": "Antwerpen ve çevresinde hizmet veren yerel bir elektrikçi olarak, bölgedeki bina tiplerini ve renovasyon süreçlerini yakından bilen bir yaklaşımla çalışır. “Elektricien Antwerpen” arayışınızda hızlı ulaşılabilir ve çözüm odaklı bir hizmet hedeflenir."
+      },
+      "contactPage": {
+        "intro": "Keuring öncesi hazırlık, yeni tesisat veya elektrikle ilgili sorularınız için bizimle iletişime geçin. Regio Antwerpen’de hızlı geri dönüş ve net süreç hedefliyoruz.",
+        "formHelp": "Aşağıdaki formu doldurun, size en kısa sürede dönüş yapalım. Mümkünse talebinizi kısaca (mekan tipi, bölge, ihtiyaç ve zaman tercihi) belirtin.",
+        "closing": "Hızlı bilgi almak için arayabilir veya e-posta gönderebilirsiniz. Elektromax, Antwerpen bölgesinde güvenli ve standartlara uygun elektrik çözümleri için yanınızda."
+      }
+    }
+  },
+  "ui": {
+    "nl": {
+      "nav": {
+        "home": "Home",
+        "services": "Diensten",
+        "projects": "Projecten",
+        "about": "Over ons",
+        "contact": "Contact"
+      },
+      "routes": {
+        "services": "/diensten",
+        "projects": "/projecten",
+        "about": "/over-ons",
+        "contact": "/contact"
+      },
+      "header": {
+        "toggleTheme": "Thema wisselen",
+        "openMenu": "Menu openen",
+        "closeMenu": "Menu sluiten",
+        "call": "Bel",
+        "quoteCta": "Offerte / afspraak",
+        "language": "Taal kiezen"
+      },
+      "footer": {
+        "pages": "Pagina's",
+        "contact": "Contact",
+        "email": "E-mail",
+        "call": "Bel",
+        "rights": "Alle rechten voorbehouden.",
+        "shortDesc": "Veilige elektriciteitswerken voor woning, appartement, handelspand en werf in Regio Antwerpen. Focus op AREI en duidelijke planning."
+      },
+      "common": {
+        "details": "Details",
+        "viewAllServices": "Bekijk alle diensten",
+        "quickContact": "Snel contact",
+        "callPrefix": "Bel:",
+        "goToContact": "Ga naar contact",
+        "openForm": "Open formulier",
+        "region": "Regio"
+      },
+      "home": {
+        "servicesTitle": "Diensten",
+        "servicesLead": "Doel bij elk project: veilige installatie, ordelijke kast en een helder traject. Kies de dienst die past bij uw situatie.",
+        "audienceTitle": "Duidelijke voordelen voor eigenaars, syndici en bedrijven",
+        "quoteCta": "Offerte / afspraak",
+        "projectsCta": "Bekijk voorbeelden",
+        "quickContactTitle": "Snel contact",
+        "summaryTitle": "Korte samenvatting",
+        "call": "Bel",
+        "mail": "Mail"
+      },
+      "servicesPage": {
+        "title": "Diensten",
+        "lead": "Algemene elektriciteitswerken, keuring/AREI voorbereiding, nieuwbouw en werfinstallaties, EV laadpalen en beveiligingssystemen.",
+        "contactLead": "Voor keuring, nieuwbouw, renovatie of vragen rond elektriciteit: contacteer ons."
+      },
+      "projectsPage": {
+        "title": "Referenties / Projecten",
+        "lead": "Deze voorbeelden tonen typische opdrachten in Regio Antwerpen. Later kunnen foto's en extra details toegevoegd worden.",
+        "ctaTitle": "Plant u een gelijkaardige opdracht?",
+        "ctaLead": "Voor keuring, installatie, renovatie of beveiliging: stuur kort uw vraag, dan denken we mee naar een passende oplossing.",
+        "servicesCta": "Bekijk de diensten"
+      },
+      "aboutPage": {
+        "workingStyle": "Samenvatting",
+        "values": "Diensten",
+        "localFocus": "Extra info",
+        "contactCta": "Contacteer ons",
+        "servicesCta": "Bekijk de diensten"
+      },
+      "contactPage": {
+        "title": "Contact",
+        "sendMessage": "Stuur een bericht",
+        "name": "Naam",
+        "contact": "Telefoon of e-mail",
+        "subject": "Onderwerp",
+        "message": "Bericht",
+        "placeholderName": "Uw naam",
+        "placeholderContact": "+32… of e-mail",
+        "placeholderMessage": "Type pand, locatie, uw vraag en timing.",
+        "errorMessage": "Schrijf uw vraag iets concreter in het berichtveld.",
+        "sending": "Verzenden…",
+        "sent": "Verzonden",
+        "send": "Verzenden",
+        "sendByEmail": "Verstuur via e-mail",
+        "success": "Uw bericht is ontvangen. We nemen zo snel mogelijk contact op. Voor snelle info kan u bellen.",
+        "social": "Social media",
+        "zone": "Regio",
+        "copy": "Kopieer",
+        "copied": "Gekopieerd",
+        "mail": "Mail",
+        "subjectOptions": [
+          "Keuring / AREI voorbereiding",
+          "Algemene elektriciteitswerken",
+          "Nieuwbouw & werfinstallaties",
+          "EV laadpaal (laadpalen)",
+          "Camerabewaking / parlofonie",
+          "Andere"
+        ]
+      },
+      "notFound": {
+        "title": "Pagina niet gevonden",
+        "lead": "Deze link is ongeldig of de pagina werd verplaatst.",
+        "homeCta": "Terug naar home",
+        "servicesCta": "Bekijk de diensten"
+      },
+      "meta": {
+        "homeTitle": "Elektromax | Elektricien Antwerpen – Regio Antwerpen",
+        "homeDescription": "Algemene elektriciteitswerken, keuring/AREI voorbereiding, nieuwbouw & werfinstallaties, EV laadpalen, camerabewaking en parlofonie in Regio Antwerpen.",
+        "servicesTitle": "Diensten | Elektromax – Regio Antwerpen",
+        "servicesDescription": "Algemene elektriciteitswerken, keuring/AREI voorbereiding, nieuwbouw & werfinstallaties, EV laadpalen, camerabewaking en parlofonie.",
+        "projectsTitle": "Projecten | Elektromax – Regio Antwerpen",
+        "projectsDescription": "Voorbeelden: keuring/AREI, nieuwbouwinstallatie, camerabewaking & parlofonie en EV laadpalen.",
+        "aboutTitle": "Wie zijn wij? | Elektromax – Regio Antwerpen",
+        "aboutDescription": "Elektromax: lokaal in Antwerpen, focus op veiligheid, kwaliteit en duidelijke afspraken. AREI-conforme oplossingen.",
+        "contactTitle": "Contact | Elektromax – Regio Antwerpen",
+        "contactDescription": "Contacteer Elektromax voor keuring/AREI voorbereiding, algemene elektriciteitswerken, nieuwbouw, EV laadpaal en beveiligingsoplossingen.",
+        "notFoundTitle": "Pagina niet gevonden | Elektromax",
+        "notFoundDescription": "De pagina die u zoekt bestaat niet."
+      }
+    },
+    "en": {
+      "nav": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "routes": {
+        "services": "/services",
+        "projects": "/projects",
+        "about": "/about",
+        "contact": "/contact"
+      },
+      "header": {
+        "toggleTheme": "Toggle theme",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "call": "Call",
+        "quoteCta": "Get a quote",
+        "language": "Choose language"
+      },
+      "footer": {
+        "pages": "Pages",
+        "contact": "Contact",
+        "email": "Email",
+        "call": "Call",
+        "rights": "All rights reserved.",
+        "shortDesc": "Safe electrical works for homes, apartments, commercial premises and construction sites in the Antwerp Region."
+      },
+      "common": {
+        "details": "Details",
+        "viewAllServices": "View all services",
+        "quickContact": "Quick contact",
+        "callPrefix": "Call:",
+        "goToContact": "Go to contact",
+        "openForm": "Open form",
+        "region": "Region"
+      },
+      "home": {
+        "servicesTitle": "Services",
+        "servicesLead": "Our goal on every job: safe installation, organised distribution board, clear process. Choose the service that fits your situation.",
+        "audienceTitle": "Clear benefits for homeowners, property managers and businesses",
+        "quoteCta": "Get a quote",
+        "projectsCta": "View project examples",
+        "quickContactTitle": "Quick Contact",
+        "summaryTitle": "Service Summary",
+        "call": "Call",
+        "mail": "Email"
+      },
+      "servicesPage": {
+        "title": "Services",
+        "lead": "General electrical works, AREI/inspection preparation, new construction and job-site installations, EV charging stations and security systems.",
+        "contactLead": "For inspection preparation, new installations or any electrical question — get in touch."
+      },
+      "projectsPage": {
+        "title": "References / Projects",
+        "lead": "These examples show typical jobs carried out by Elektromax in the Antwerp Region. Photos and further details can be added later.",
+        "ctaTitle": "Planning a similar project?",
+        "ctaLead": "For inspection, installation, renovation or security: share your question briefly and we will work out a suitable solution together.",
+        "servicesCta": "View services"
+      },
+      "aboutPage": {
+        "workingStyle": "How we work",
+        "values": "Values",
+        "localFocus": "Local focus — Antwerp Region",
+        "contactCta": "Get in touch",
+        "servicesCta": "View services"
+      },
+      "contactPage": {
+        "title": "Contact",
+        "sendMessage": "Send a message",
+        "name": "Full name",
+        "contact": "Phone or email",
+        "subject": "Subject",
+        "message": "Message",
+        "placeholderName": "Your name",
+        "placeholderContact": "+32… or email",
+        "placeholderMessage": "Type of property, location, your question and preferred timing.",
+        "errorMessage": "Please describe your request in a bit more detail.",
+        "sending": "Sending…",
+        "sent": "Sent",
+        "send": "Send",
+        "sendByEmail": "Send via email",
+        "success": "Your message has been received. We will get back to you as soon as possible. For urgent matters, please call us.",
+        "social": "Social media",
+        "zone": "Region",
+        "copy": "Copy",
+        "copied": "Copied",
+        "mail": "Email us",
+        "subjectOptions": [
+          "Inspection / AREI preparation",
+          "General electrical works",
+          "New construction & job-site installation",
+          "EV charging station",
+          "CCTV / intercom systems",
+          "Other"
+        ]
+      },
+      "notFound": {
+        "title": "Page not found",
+        "lead": "This link may be invalid or the page has moved.",
+        "homeCta": "Back to home",
+        "servicesCta": "View services"
+      },
+      "meta": {
+        "homeTitle": "Elektromax | Electrician Antwerp – Antwerp Region",
+        "homeDescription": "General electrical works, AREI/inspection preparation, new construction installations, EV charging stations, CCTV and intercom in the Antwerp Region.",
+        "servicesTitle": "Services | Elektromax – Antwerp Region",
+        "servicesDescription": "General electrical works, AREI inspection preparation, new construction, EV charging stations, CCTV and intercom.",
+        "projectsTitle": "Projects | Elektromax – Antwerp Region",
+        "projectsDescription": "Project examples: AREI inspection, new-build installation, CCTV & intercom and EV charging stations.",
+        "aboutTitle": "About | Elektromax – Antwerp Region",
+        "aboutDescription": "Elektromax: local in Antwerp, focused on safety, quality and clear communication. AREI-compliant electrical solutions.",
+        "contactTitle": "Contact | Elektromax – Antwerp Region",
+        "contactDescription": "Contact Elektromax for AREI inspection, general electrical works, new installations, EV chargers and security solutions.",
+        "notFoundTitle": "Page not found | Elektromax",
+        "notFoundDescription": "The page you are looking for does not exist."
+      }
+    },
+    "tr": {
+      "nav": {
+        "home": "Ana Sayfa",
+        "services": "Hizmetler",
+        "projects": "Projeler",
+        "about": "Hakkımızda",
+        "contact": "İletişim"
+      },
+      "routes": {
+        "services": "/hizmetler",
+        "projects": "/projeler",
+        "about": "/hakkimizda",
+        "contact": "/iletisim"
+      },
+      "header": {
+        "toggleTheme": "Tema değiştir",
+        "openMenu": "Menüyü aç",
+        "closeMenu": "Menüyü kapat",
+        "call": "Ara",
+        "quoteCta": "Teklif / randevu isteyin",
+        "language": "Dil seç"
+      },
+      "footer": {
+        "pages": "Sayfalar",
+        "contact": "İletişim",
+        "email": "E-posta",
+        "call": "Ara",
+        "rights": "Tüm hakları saklıdır.",
+        "shortDesc": "Antwerpen bölgesinde konut, apartman, işyeri ve şantiyeler için güvenli elektrik işleri."
+      },
+      "common": {
+        "details": "Detaylar",
+        "viewAllServices": "Tüm hizmetleri görüntüleyin",
+        "quickContact": "Hızlı iletişim",
+        "callPrefix": "Ara:",
+        "goToContact": "İletişim sayfasına git",
+        "openForm": "Formu aç",
+        "region": "Bölge"
+      },
+      "home": {
+        "servicesTitle": "Hizmetler",
+        "servicesLead": "Her işte amacımız: güvenli altyapı, düzenli pano, net süreç.",
+        "audienceTitle": "Ev sahipleri, syndicus ve işletmeler için net faydalar",
+        "quoteCta": "Teklif / randevu isteyin",
+        "projectsCta": "Örnek projeleri inceleyin",
+        "quickContactTitle": "Hızlı İletişim",
+        "summaryTitle": "Hizmet Özeti",
+        "call": "Ara",
+        "mail": "Mail"
+      },
+      "servicesPage": {
+        "title": "Hizmetler",
+        "lead": "Konut, apartman ve işyerlerinde genel elektrik işleri; keuring/AREI hazırlığı; yeni bina ve şantiye projeleri, şarj istasyonları ve güvenlik sistemleri.",
+        "contactLead": "Keuring öncesi hazırlık, yeni tesisat veya elektrikle ilgili sorularınız için bize ulaşın."
+      },
+      "projectsPage": {
+        "title": "Referanslar / Projeler",
+        "lead": "Aşağıdaki örnekler, Elektromax'ın Antwerpen bölgesinde sık gerçekleştirdiği iş türlerini gösterir.",
+        "ctaTitle": "Benzer bir iş mi planlıyorsunuz?",
+        "ctaLead": "Keuring öncesi hazırlık, yeni tesisat veya güvenlik sistemleri için kısa bir bilgi paylaşın.",
+        "servicesCta": "Hizmetleri inceleyin"
+      },
+      "aboutPage": {
+        "workingStyle": "Çalışma tarzımız",
+        "values": "Değerler",
+        "localFocus": "Yerel bölge odağı",
+        "contactCta": "İletişime geçin",
+        "servicesCta": "Hizmetleri inceleyin"
+      },
+      "contactPage": {
+        "title": "İletişim",
+        "sendMessage": "Mesaj gönderin",
+        "name": "Ad Soyad",
+        "contact": "Telefon veya e-posta",
+        "subject": "Konu",
+        "message": "Mesaj",
+        "placeholderName": "Adınız",
+        "placeholderContact": "+32... veya email",
+        "placeholderMessage": "Mekan tipi, bölge, ihtiyacınız ve zaman tercihinizi yazın.",
+        "errorMessage": "Mesaj alanına talebinizi biraz daha detaylı yazın.",
+        "sending": "Gönderiliyor...",
+        "sent": "Gönderildi",
+        "send": "Gönder",
+        "sendByEmail": "E-posta ile gönder",
+        "success": "Mesajınız alındı. En kısa sürede dönüş yapacağız.",
+        "social": "Sosyal medya",
+        "zone": "Bölge",
+        "copy": "Kopyala",
+        "copied": "Kopyalandı",
+        "mail": "Mail at",
+        "subjectOptions": [
+          "Keuring / AREI hazırlığı",
+          "Genel elektrik işleri",
+          "Yeni bina & şantiye tesisatı",
+          "EV şarj istasyonu (laadpalen)",
+          "Kamera / interkom sistemleri",
+          "Diğer"
+        ]
+      },
+      "notFound": {
+        "title": "Sayfa bulunamadı",
+        "lead": "Bu bağlantı geçersiz olabilir veya sayfa taşınmış olabilir.",
+        "homeCta": "Ana sayfaya dön",
+        "servicesCta": "Hizmetleri inceleyin"
+      },
+      "meta": {
+        "homeTitle": "Elektromax | Elektricien Antwerpen",
+        "homeDescription": "Antwerpen bölgesinde genel elektrik işleri, keuring/AREI hazırlığı, EV şarj istasyonları, kamera ve interkom sistemleri.",
+        "servicesTitle": "Hizmetler | Elektromax",
+        "servicesDescription": "Genel elektrik işleri, keuring/AREI hazırlığı, yeni bina tesisatı, EV şarj istasyonları, kamera ve interkom.",
+        "projectsTitle": "Projeler | Elektromax",
+        "projectsDescription": "Örnek proje tipleri: keuring/AREI hazırlığı, yeni bina tesisatı, kamera ve EV şarj istasyonları.",
+        "aboutTitle": "Hakkımızda | Elektromax",
+        "aboutDescription": "Elektromax: güvenlik ve kalite odaklı yerel elektrik hizmeti. Antwerpen ve çevresinde AREI uyumlu çözümler.",
+        "contactTitle": "İletişim | Elektromax",
+        "contactDescription": "Keuring/AREI hazırlığı, elektrik işleri veya EV şarj istasyonları için Elektromax ile iletişime geçin.",
+        "notFoundTitle": "Sayfa bulunamadı | Elektromax",
+        "notFoundDescription": "Aradığınız sayfa bulunamadı."
+      }
+    }
+  },
+  "extras": {
+    "nl": {
+      "heroBadge": "35 jaar ervaring · Regio Antwerpen",
+      "heroTitle": [
+        "Uw elektricien",
+        "in Antwerpen."
+      ],
+      "heroAccent": "Veilig. Netjes. AREI-conform.",
+      "heroChecks": [
+        "Gratis offerte",
+        "Klaar voor de keuring",
+        "Woning, handel & werf"
+      ],
+      "callNow": "Bel nu",
+      "freeQuote": "Gratis offerte",
+      "whatsapp": "WhatsApp",
+      "floatingOk": "Keuring in orde",
+      "floatingOkSub": "Installatie conform AREI",
+      "floatingYears": "jaar vakmanschap",
+      "stats": [
+        {
+          "value": 35,
+          "suffix": "+",
+          "label": "Jaar ervaring"
+        },
+        {
+          "value": 200,
+          "suffix": "+",
+          "label": "Projecten"
+        },
+        {
+          "value": 18,
+          "suffix": "",
+          "label": "Specialisaties"
+        },
+        {
+          "value": 25,
+          "suffix": " jaar",
+          "label": "Geldig keuringsattest (woning)"
+        }
+      ],
+      "servicesKicker": "Wat we doen",
+      "allWorksKicker": "Volledig aanbod",
+      "allWorksTitle": "Voor volgende werken mag u ons contacteren",
+      "allWorksLead": "Elektriciteit is meer dan een zekering en een stopcontact. Installaties staan steeds meer in connectie met elkaar: van domotica tot zonnepanelen, batterij en laadpaal.",
+      "works": [
+        {
+          "icon": "Cable",
+          "label": "Volledige elektrische installatie plaatsen"
+        },
+        {
+          "icon": "Cpu",
+          "label": "Domotica"
+        },
+        {
+          "icon": "Gauge",
+          "label": "Zekeringkast vernieuwen / aanpassen"
+        },
+        {
+          "icon": "ToggleRight",
+          "label": "Stopcontacten en schakelaars vervangen"
+        },
+        {
+          "icon": "Lightbulb",
+          "label": "Extra stopcontacten of lichtpunten"
+        },
+        {
+          "icon": "ShieldCheck",
+          "label": "Installatie voorbereiden voor de keuring"
+        },
+        {
+          "icon": "FileText",
+          "label": "Eendraadsschema en situatieschema"
+        },
+        {
+          "icon": "Sun",
+          "label": "Zonnepanelen plaatsen"
+        },
+        {
+          "icon": "PlugZap",
+          "label": "Laadpalen / wallbox"
+        },
+        {
+          "icon": "BatteryCharging",
+          "label": "Thuisbatterij plaatsen"
+        },
+        {
+          "icon": "Cctv",
+          "label": "Camera-installatie"
+        },
+        {
+          "icon": "Video",
+          "label": "Parlofonie & videofonie (Bticino)"
+        },
+        {
+          "icon": "Flame",
+          "label": "Brandinstallatie"
+        },
+        {
+          "icon": "AlarmSmoke",
+          "label": "Rookmelders installeren"
+        },
+        {
+          "icon": "Zap",
+          "label": "Krachtstroom 400V"
+        },
+        {
+          "icon": "ArrowDownToLine",
+          "label": "Aarding aanleggen"
+        },
+        {
+          "icon": "Siren",
+          "label": "Storingen & kortsluiting herstellen"
+        },
+        {
+          "icon": "Factory",
+          "label": "Industriële projecten"
+        }
+      ],
+      "keuring": {
+        "kicker": "Elektrische keuring",
+        "title": "Afgekeurd? Wij brengen uw installatie in orde.",
+        "lead": "We controleren uw installatie, lossen de opmerkingen van het keuringsorganisme op en zorgen dat alles klaar is voor een geldig keuringsattest.",
+        "facts": [
+          {
+            "value": "25 jaar",
+            "label": "geldig attest voor een woning"
+          },
+          {
+            "value": "5 jaar",
+            "label": "geldig attest voor een handelszaak"
+          }
+        ],
+        "points": [
+          "In orde brengen van afgekeurde installaties",
+          "Tekenen van situatie- en eendraadsschema's",
+          "Zekeringkast vernieuwen en aarding aanleggen",
+          "Nieuwbouw en renovatie"
+        ],
+        "cta": "Plan een controle"
+      },
+      "processKicker": "Zo werken we",
+      "processTitle": "Van eerste contact tot oplevering",
+      "process": [
+        {
+          "title": "Contact",
+          "text": "Bel, mail of stuur een WhatsApp met foto's van uw situatie."
+        },
+        {
+          "title": "Plaatsbezoek",
+          "text": "We bekijken de installatie ter plaatse en maken een gratis offerte."
+        },
+        {
+          "title": "Uitvoering",
+          "text": "Nette, veilige uitvoering volgens AREI en volgens planning."
+        },
+        {
+          "title": "Oplevering",
+          "text": "Ordelijke kast, schema's en een installatie klaar voor de keuring."
+        }
+      ],
+      "projectsKicker": "Realisaties",
+      "areaKicker": "Werkgebied",
+      "areaTitle": "Antwerpen en omgeving",
+      "areaLead": "We werken lokaal in Antwerpen en de omliggende gemeenten. Voor grotere projecten zijn we actief in heel België en de buurlanden.",
+      "towns": [
+        "Antwerpen",
+        "Berchem",
+        "Borgerhout",
+        "Deurne",
+        "Merksem",
+        "Ekeren",
+        "Wilrijk",
+        "Hoboken",
+        "Mortsel",
+        "Edegem",
+        "Kontich",
+        "Schoten",
+        "Brasschaat",
+        "Kapellen",
+        "Zwijndrecht",
+        "Wommelgem"
+      ],
+      "areaMore": "en omliggende gemeenten",
+      "faqKicker": "Veelgestelde vragen",
+      "faqTitle": "Goed om te weten",
+      "faq": [
+        {
+          "q": "Mijn installatie werd afgekeurd. Wat nu?",
+          "a": "Geen paniek. We bekijken het keuringsverslag, voeren de nodige aanpassingen uit en zetten alles klaar voor de herkeuring. Die moet gebeuren binnen de termijn die op het verslag staat (meestal 12 maanden)."
+        },
+        {
+          "q": "Hoe lang is een keuringsattest geldig?",
+          "a": "Voor een woning is een conform keuringsattest 25 jaar geldig. Voor een handelszaak of niet-residentieel gebouw is dat 5 jaar."
+        },
+        {
+          "q": "Is de offerte gratis?",
+          "a": "Ja. Na een kort gesprek of plaatsbezoek krijgt u een gratis en vrijblijvende offerte."
+        },
+        {
+          "q": "Maken jullie ook het eendraadsschema en situatieschema?",
+          "a": "Ja. We tekenen de situatie- en eendraadsschema's die nodig zijn voor de keuring en voor uw eigen dossier."
+        },
+        {
+          "q": "Kunnen jullie een laadpaal of thuisbatterij plaatsen?",
+          "a": "Ja. We controleren eerst de beschikbare capaciteit en beveiligingen en plaatsen daarna de laadpaal, wallbox of batterij veilig en netjes."
+        },
+        {
+          "q": "In welke regio zijn jullie actief?",
+          "a": "Vooral in Antwerpen en omgeving. Voor grotere en industriële projecten werken we in heel België en de buurlanden."
+        }
+      ],
+      "ctaTitle": "Klaar om te starten?",
+      "ctaLead": "Vraag vandaag nog uw gratis offerte aan. We denken praktisch mee en communiceren duidelijk.",
+      "offer": {
+        "badge": "GRATIS offerte",
+        "title": "Interesse?",
+        "lines": [
+          "Regio Antwerpen · 35 jaar ervaring",
+          "In orde brengen van afgekeurde installaties",
+          "Keuringsattest woning: 25 jaar geldig · handelszaak: 5 jaar",
+          "Situatie- en eendraadsschema's tekenen",
+          "Parlofonie & videofonie Bticino",
+          "Zekeringkast vernieuwen · aarding aanleggen",
+          "Nieuwbouw en renovatie",
+          "Storing of kortsluiting in orde maken",
+          "Laadpalen & wallbox · industriële projecten"
+        ],
+        "email": "E-mail",
+        "dismiss": "Niet geïnteresseerd",
+        "waMessage": "Hallo, ik wil graag een gratis offerte."
+      },
+      "waMessage": "Hallo, ik neem contact op via de website van Elektromax.",
+      "mobileCall": "Bellen",
+      "otherServices": "Andere diensten",
+      "sendWhatsapp": "Verstuur via WhatsApp",
+      "formNote": "Uw bericht wordt geopend in uw e-mail- of WhatsApp-app. Er wordt niets opgeslagen op deze website.",
+      "mapTitle": "Werkgebied Elektromax: Antwerpen",
+      "aboutKicker": "Over Elektromax",
+      "contactKicker": "Contact",
+      "projectsLeadKicker": "Typische opdrachten"
+    },
+    "en": {
+      "heroBadge": "35 years of experience · Antwerp Region",
+      "heroTitle": [
+        "Your electrician",
+        "in Antwerp."
+      ],
+      "heroAccent": "Safe. Tidy. AREI-compliant.",
+      "heroChecks": [
+        "Free quote",
+        "Ready for inspection",
+        "Homes, shops & sites"
+      ],
+      "callNow": "Call now",
+      "freeQuote": "Free quote",
+      "whatsapp": "WhatsApp",
+      "floatingOk": "Inspection passed",
+      "floatingOkSub": "AREI-compliant installation",
+      "floatingYears": "years of craftsmanship",
+      "stats": [
+        {
+          "value": 35,
+          "suffix": "+",
+          "label": "Years of experience"
+        },
+        {
+          "value": 200,
+          "suffix": "+",
+          "label": "Projects"
+        },
+        {
+          "value": 18,
+          "suffix": "",
+          "label": "Specialisations"
+        },
+        {
+          "value": 25,
+          "suffix": " yrs",
+          "label": "Valid inspection certificate (home)"
+        }
+      ],
+      "servicesKicker": "What we do",
+      "allWorksKicker": "Full range",
+      "allWorksTitle": "You can contact us for the following works",
+      "allWorksLead": "Electricity is more than a fuse and a socket. Installations are increasingly connected: from home automation to solar panels, batteries and EV chargers.",
+      "works": [
+        {
+          "icon": "Cable",
+          "label": "Complete electrical installation"
+        },
+        {
+          "icon": "Cpu",
+          "label": "Home automation (domotics)"
+        },
+        {
+          "icon": "Gauge",
+          "label": "Renew / adapt distribution board"
+        },
+        {
+          "icon": "ToggleRight",
+          "label": "Replace sockets and switches"
+        },
+        {
+          "icon": "Lightbulb",
+          "label": "Extra sockets or light points"
+        },
+        {
+          "icon": "ShieldCheck",
+          "label": "Prepare installation for inspection"
+        },
+        {
+          "icon": "FileText",
+          "label": "Single-line and layout diagrams"
+        },
+        {
+          "icon": "Sun",
+          "label": "Solar panel installation"
+        },
+        {
+          "icon": "PlugZap",
+          "label": "EV chargers / wallbox"
+        },
+        {
+          "icon": "BatteryCharging",
+          "label": "Home battery installation"
+        },
+        {
+          "icon": "Cctv",
+          "label": "Camera installation"
+        },
+        {
+          "icon": "Video",
+          "label": "Intercom & video intercom (Bticino)"
+        },
+        {
+          "icon": "Flame",
+          "label": "Fire installation"
+        },
+        {
+          "icon": "AlarmSmoke",
+          "label": "Smoke detector installation"
+        },
+        {
+          "icon": "Zap",
+          "label": "Three-phase power 400V"
+        },
+        {
+          "icon": "ArrowDownToLine",
+          "label": "Earthing installation"
+        },
+        {
+          "icon": "Siren",
+          "label": "Faults & short-circuit repair"
+        },
+        {
+          "icon": "Factory",
+          "label": "Industrial projects"
+        }
+      ],
+      "keuring": {
+        "kicker": "Electrical inspection",
+        "title": "Failed inspection? We'll bring your installation up to standard.",
+        "lead": "We check your installation, fix the remarks from the inspection body and make sure everything is ready for a valid inspection certificate.",
+        "facts": [
+          {
+            "value": "25 years",
+            "label": "certificate validity for a home"
+          },
+          {
+            "value": "5 years",
+            "label": "certificate validity for a shop"
+          }
+        ],
+        "points": [
+          "Fixing rejected installations",
+          "Drawing layout and single-line diagrams",
+          "Renewing distribution boards and earthing",
+          "New construction and renovation"
+        ],
+        "cta": "Book a check"
+      },
+      "processKicker": "How we work",
+      "processTitle": "From first contact to handover",
+      "process": [
+        {
+          "title": "Contact",
+          "text": "Call, email or send a WhatsApp with photos of your situation."
+        },
+        {
+          "title": "Site visit",
+          "text": "We inspect the installation on site and prepare a free quote."
+        },
+        {
+          "title": "Execution",
+          "text": "Tidy, safe work according to AREI and according to plan."
+        },
+        {
+          "title": "Handover",
+          "text": "Organised board, diagrams and an installation ready for inspection."
+        }
+      ],
+      "projectsKicker": "Our work",
+      "areaKicker": "Service area",
+      "areaTitle": "Antwerp and surroundings",
+      "areaLead": "We work locally in Antwerp and the surrounding municipalities. For larger projects we are active throughout Belgium and neighbouring countries.",
+      "towns": [
+        "Antwerpen",
+        "Berchem",
+        "Borgerhout",
+        "Deurne",
+        "Merksem",
+        "Ekeren",
+        "Wilrijk",
+        "Hoboken",
+        "Mortsel",
+        "Edegem",
+        "Kontich",
+        "Schoten",
+        "Brasschaat",
+        "Kapellen",
+        "Zwijndrecht",
+        "Wommelgem"
+      ],
+      "areaMore": "and surrounding municipalities",
+      "faqKicker": "FAQ",
+      "faqTitle": "Good to know",
+      "faq": [
+        {
+          "q": "My installation failed the inspection. What now?",
+          "a": "Don't worry. We review the inspection report, carry out the required changes and prepare everything for the re-inspection, which must take place within the deadline on the report (usually 12 months)."
+        },
+        {
+          "q": "How long is an inspection certificate valid?",
+          "a": "For a home, a compliant certificate is valid for 25 years. For a shop or non-residential building it is 5 years."
+        },
+        {
+          "q": "Is the quote free?",
+          "a": "Yes. After a short call or site visit you receive a free, no-obligation quote."
+        },
+        {
+          "q": "Do you also draw the single-line and layout diagrams?",
+          "a": "Yes. We draw the layout and single-line diagrams needed for the inspection and for your own records."
+        },
+        {
+          "q": "Can you install an EV charger or home battery?",
+          "a": "Yes. We first check the available capacity and protections, then install the charger, wallbox or battery safely and neatly."
+        },
+        {
+          "q": "Which area do you cover?",
+          "a": "Mainly Antwerp and surroundings. For larger and industrial projects we work throughout Belgium and neighbouring countries."
+        }
+      ],
+      "ctaTitle": "Ready to get started?",
+      "ctaLead": "Request your free quote today. We think along practically and communicate clearly.",
+      "offer": {
+        "badge": "Free quote",
+        "title": "Interested?",
+        "lines": [
+          "Antwerp Region · 35 years of experience",
+          "Fixing rejected installations",
+          "Inspection certificate home: valid 25 years · shop: 5 years",
+          "Layout and single-line diagrams",
+          "Bticino intercom & video intercom",
+          "Renewing distribution boards · earthing",
+          "New construction and renovation",
+          "Fault or short-circuit repair",
+          "EV chargers & wallbox · industrial projects"
+        ],
+        "email": "Email",
+        "dismiss": "Not interested",
+        "waMessage": "Hello, I would like a free quote."
+      },
+      "waMessage": "Hello, I am contacting you via the Elektromax website.",
+      "mobileCall": "Call",
+      "otherServices": "Other services",
+      "sendWhatsapp": "Send via WhatsApp",
+      "formNote": "Your message opens in your email or WhatsApp app. Nothing is stored on this website.",
+      "mapTitle": "Elektromax service area: Antwerp",
+      "aboutKicker": "About Elektromax",
+      "contactKicker": "Contact",
+      "projectsLeadKicker": "Typical jobs"
+    },
+    "tr": {
+      "heroBadge": "35 yıllık tecrübe · Antwerpen bölgesi",
+      "heroTitle": [
+        "Antwerpen'deki",
+        "elektrikçiniz."
+      ],
+      "heroAccent": "Güvenli. Temiz. AREI uyumlu.",
+      "heroChecks": [
+        "Ücretsiz teklif",
+        "Keuring'e hazır",
+        "Ev, işyeri ve şantiye"
+      ],
+      "callNow": "Hemen ara",
+      "freeQuote": "Ücretsiz teklif",
+      "whatsapp": "WhatsApp",
+      "floatingOk": "Keuring tamam",
+      "floatingOkSub": "AREI uyumlu tesisat",
+      "floatingYears": "yıllık ustalık",
+      "stats": [
+        {
+          "value": 35,
+          "suffix": "+",
+          "label": "Yıl tecrübe"
+        },
+        {
+          "value": 200,
+          "suffix": "+",
+          "label": "Proje"
+        },
+        {
+          "value": 18,
+          "suffix": "",
+          "label": "Uzmanlık alanı"
+        },
+        {
+          "value": 25,
+          "suffix": " yıl",
+          "label": "Geçerli keuring belgesi (konut)"
+        }
+      ],
+      "servicesKicker": "Neler yapıyoruz",
+      "allWorksKicker": "Tüm hizmetler",
+      "allWorksTitle": "Aşağıdaki işler için bize ulaşabilirsiniz",
+      "allWorksLead": "Elektrik, bir sigorta ve prizden ibaret değil. Tesisatlar giderek birbirine bağlanıyor: akıllı evden güneş paneline, bataryadan şarj istasyonuna.",
+      "works": [
+        {
+          "icon": "Cable",
+          "label": "Komple elektrik tesisatı"
+        },
+        {
+          "icon": "Cpu",
+          "label": "Akıllı ev (domotica)"
+        },
+        {
+          "icon": "Gauge",
+          "label": "Sigorta panosu yenileme / düzenleme"
+        },
+        {
+          "icon": "ToggleRight",
+          "label": "Priz ve anahtar değişimi"
+        },
+        {
+          "icon": "Lightbulb",
+          "label": "Ek priz veya aydınlatma noktası"
+        },
+        {
+          "icon": "ShieldCheck",
+          "label": "Tesisatı keuring'e hazırlama"
+        },
+        {
+          "icon": "FileText",
+          "label": "Tek hat ve vaziyet şeması"
+        },
+        {
+          "icon": "Sun",
+          "label": "Güneş paneli montajı"
+        },
+        {
+          "icon": "PlugZap",
+          "label": "Şarj istasyonu / wallbox"
+        },
+        {
+          "icon": "BatteryCharging",
+          "label": "Ev bataryası montajı"
+        },
+        {
+          "icon": "Cctv",
+          "label": "Kamera kurulumu"
+        },
+        {
+          "icon": "Video",
+          "label": "Diyafon ve görüntülü diyafon (Bticino)"
+        },
+        {
+          "icon": "Flame",
+          "label": "Yangın tesisatı"
+        },
+        {
+          "icon": "AlarmSmoke",
+          "label": "Duman dedektörü montajı"
+        },
+        {
+          "icon": "Zap",
+          "label": "Trifaze 400V tesisat"
+        },
+        {
+          "icon": "ArrowDownToLine",
+          "label": "Topraklama"
+        },
+        {
+          "icon": "Siren",
+          "label": "Arıza ve kısa devre onarımı"
+        },
+        {
+          "icon": "Factory",
+          "label": "Endüstriyel projeler"
+        }
+      ],
+      "keuring": {
+        "kicker": "Elektrik keuring'i",
+        "title": "Keuring'den geçemediniz mi? Tesisatınızı biz düzeltelim.",
+        "lead": "Tesisatınızı kontrol ediyor, keuring kurumunun tespit ettiği eksikleri gideriyor ve geçerli bir keuring belgesi için her şeyi hazırlıyoruz.",
+        "facts": [
+          {
+            "value": "25 yıl",
+            "label": "konut için belge geçerliliği"
+          },
+          {
+            "value": "5 yıl",
+            "label": "işyeri için belge geçerliliği"
+          }
+        ],
+        "points": [
+          "Reddedilen tesisatların düzeltilmesi",
+          "Vaziyet ve tek hat şemalarının çizilmesi",
+          "Pano yenileme ve topraklama",
+          "Yeni bina ve renovasyon"
+        ],
+        "cta": "Kontrol randevusu al"
+      },
+      "processKicker": "Nasıl çalışıyoruz",
+      "processTitle": "İlk temastan teslime kadar",
+      "process": [
+        {
+          "title": "İletişim",
+          "text": "Arayın, mail atın veya durumunuzun fotoğraflarını WhatsApp'tan gönderin."
+        },
+        {
+          "title": "Yerinde inceleme",
+          "text": "Tesisatı yerinde inceler, ücretsiz teklif hazırlarız."
+        },
+        {
+          "title": "Uygulama",
+          "text": "AREI'ye uygun, temiz ve planlı işçilik."
+        },
+        {
+          "title": "Teslim",
+          "text": "Düzenli pano, şemalar ve keuring'e hazır tesisat."
+        }
+      ],
+      "projectsKicker": "Çalışmalarımız",
+      "areaKicker": "Hizmet bölgesi",
+      "areaTitle": "Antwerpen ve çevresi",
+      "areaLead": "Antwerpen ve çevre belediyelerde yerel olarak çalışıyoruz. Büyük projeler için tüm Belçika'da ve komşu ülkelerde aktifiz.",
+      "towns": [
+        "Antwerpen",
+        "Berchem",
+        "Borgerhout",
+        "Deurne",
+        "Merksem",
+        "Ekeren",
+        "Wilrijk",
+        "Hoboken",
+        "Mortsel",
+        "Edegem",
+        "Kontich",
+        "Schoten",
+        "Brasschaat",
+        "Kapellen",
+        "Zwijndrecht",
+        "Wommelgem"
+      ],
+      "areaMore": "ve çevre belediyeler",
+      "faqKicker": "Sık sorulan sorular",
+      "faqTitle": "Bilmeniz gerekenler",
+      "faq": [
+        {
+          "q": "Tesisatım keuring'den geçemedi. Ne yapmalıyım?",
+          "a": "Endişelenmeyin. Keuring raporunu inceler, gerekli düzeltmeleri yapar ve tekrar keuring için her şeyi hazırlarız. Tekrar keuring, raporda belirtilen süre içinde (genellikle 12 ay) yapılmalıdır."
+        },
+        {
+          "q": "Keuring belgesi ne kadar geçerli?",
+          "a": "Konutlarda uygun bir keuring belgesi 25 yıl geçerlidir. İşyeri veya konut dışı binalarda bu süre 5 yıldır."
+        },
+        {
+          "q": "Teklif ücretsiz mi?",
+          "a": "Evet. Kısa bir görüşme veya yerinde incelemeden sonra ücretsiz ve bağlayıcı olmayan bir teklif alırsınız."
+        },
+        {
+          "q": "Tek hat ve vaziyet şemasını da çiziyor musunuz?",
+          "a": "Evet. Keuring ve kendi dosyanız için gerekli vaziyet ve tek hat şemalarını çiziyoruz."
+        },
+        {
+          "q": "Şarj istasyonu veya ev bataryası kurabilir misiniz?",
+          "a": "Evet. Önce mevcut kapasiteyi ve korumaları kontrol eder, ardından şarj istasyonunu, wallbox'ı veya bataryayı güvenli ve temiz şekilde kurarız."
+        },
+        {
+          "q": "Hangi bölgede hizmet veriyorsunuz?",
+          "a": "Ağırlıklı olarak Antwerpen ve çevresinde. Büyük ve endüstriyel projeler için tüm Belçika'da ve komşu ülkelerde çalışıyoruz."
+        }
+      ],
+      "ctaTitle": "Başlamaya hazır mısınız?",
+      "ctaLead": "Ücretsiz teklifinizi bugün isteyin. Pratik çözümler üretir, açık iletişim kurarız.",
+      "offer": {
+        "badge": "Ücretsiz teklif",
+        "title": "İlgileniyor musunuz?",
+        "lines": [
+          "Antwerpen bölgesi · 35 yıllık tecrübe",
+          "Reddedilen tesisatların düzeltilmesi",
+          "Keuring belgesi konut: 25 yıl · işyeri: 5 yıl geçerli",
+          "Vaziyet ve tek hat şemaları",
+          "Bticino diyafon ve görüntülü diyafon",
+          "Pano yenileme · topraklama",
+          "Yeni bina ve renovasyon",
+          "Arıza veya kısa devre onarımı",
+          "Şarj istasyonu & wallbox · endüstriyel projeler"
+        ],
+        "email": "E-posta",
+        "dismiss": "İlgilenmiyorum",
+        "waMessage": "Merhaba, ücretsiz teklif almak istiyorum."
+      },
+      "waMessage": "Merhaba, Elektromax web sitesi üzerinden ulaşıyorum.",
+      "mobileCall": "Ara",
+      "otherServices": "Diğer hizmetler",
+      "sendWhatsapp": "WhatsApp ile gönder",
+      "formNote": "Mesajınız e-posta veya WhatsApp uygulamanızda açılır. Bu sitede hiçbir veri saklanmaz.",
+      "mapTitle": "Elektromax hizmet bölgesi: Antwerpen",
+      "aboutKicker": "Elektromax hakkında",
+      "contactKicker": "İletişim",
+      "projectsLeadKicker": "Örnek işler"
+    }
+  }
+}

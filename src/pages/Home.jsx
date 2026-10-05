@@ -8,7 +8,7 @@ import Layout from "@/components/Layout";
 import { cta } from "@/components/cta";
 import { CountUp, Reveal, SectionHeading, Stagger, staggerItem } from "@/components/motion";
 import { AllWorks, AreaSection, CtaBand, FaqSection, ProcessSection } from "@/components/sections";
-import { img, projectImages, serviceImages } from "@/content/media";
+import { img, photo, serviceImages } from "@/content/media";
 import { useContactLinks, useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -379,7 +379,7 @@ function ProjectsPreview() {
               className="group relative min-h-[22rem] overflow-hidden rounded-3xl bg-ink"
             >
               <img
-                src={projectImages[i]}
+                src={photo(p.image)}
                 alt={p.title}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover opacity-70 transition duration-700 group-hover:scale-105 group-hover:opacity-50"

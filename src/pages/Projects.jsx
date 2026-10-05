@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import Layout from "@/components/Layout";
 import { Stagger, staggerItem } from "@/components/motion";
 import { CtaBand, PageHero } from "@/components/sections";
-import { img, projectImages } from "@/content/media";
+import { img, photo } from "@/content/media";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +23,7 @@ export default function Projects() {
             >
               <div className={cn("relative min-h-72 overflow-hidden", i % 2 === 1 && "lg:order-2")}>
                 <img
-                  src={projectImages[i]}
+                  src={photo(p.image)}
                   alt={p.title}
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"

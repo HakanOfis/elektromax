@@ -1,9 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import { getContent } from "@/content";
-import { ui as uiStrings } from "@/content/ui";
-import { extras } from "@/content/extras";
+import { extras, getContent, ui as uiStrings } from "@/content";
 
 export const LOCALES = [
   { code: "nl", label: "NL", name: "Nederlands" },
