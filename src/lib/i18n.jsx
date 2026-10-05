@@ -68,6 +68,9 @@ function parsePath(pathname) {
 const STORAGE_KEY = "elektromax.locale";
 
 function readStoredLocale() {
+  // ?lang=tr (bv. vanuit het paneel) heeft voorrang
+  const fromQuery = new URLSearchParams(window.location.search).get("lang");
+  if (LOCALES.some((l) => l.code === fromQuery)) return fromQuery;
   try {
     const v = window.localStorage.getItem(STORAGE_KEY);
     if (LOCALES.some((l) => l.code === v)) return v;
